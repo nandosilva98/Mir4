@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon/exp.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/xp.css" />
+    <script src="assets/js/xp.js"></script>
+    <title>Calculadora de EXP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="xp">
+        <h2>Calculadora de XP</h2>
+        <form class="calculo" method="POST">
+          <label>Seus 5% de XP?</label>
+          <br />
+          <input type="number" id="5porcem" />
+          <br />
+          <label>Porcentagem do Level Atual</label>
+          <br />
+          <input type="number" id="porcematual" />
+          <br />
+        </form>
+        <br />
+        <br />
+        <button onclick="calculo()">Calcular</button>
+        <br />
+        <br />
+        <div id="resultado"></div>
+      </div>
+      <div class="xp" style="background-color: #37376b93,; box-shadow: 3px 4px 10px #C07850;">
+        <h2>Calculadora de Farm</h2>
+        <form class="calculo" method="POST">
+          <label>XP Necessario para Upar de Level?</label>
+          <br />
+          <input type="number" id="restante" />
+          <br />
+          <label>XP por cada monstro abatido?</label>
+          <br />
+          <input type="number" id="xpmob" />
+          <br />
+          <label>Quantos Segundos para abater um mob?</label>
+          <br />
+          <input type="number" id="segmob" />
+          <br />
+          <label>Tempo de Farm?</label>
+          <br />
+          <input type="number" id="tempofarmxp" />
+          <br />
+        </form>
+        <br />
+        <br />
+        <button onclick="calculo2()">Calcular</button>
+        <br />
+        <br />
+        <div id="resultadofarm"></div>
+      </div>
+    </div>
+  </body>
+</html>

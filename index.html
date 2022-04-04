@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+    <script src="assets/js/script.js"></script>
+    <title>Pagina Inicial | Mir4</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/inicio/mir4.png" alt="logo mir4" />
+      <div class="header_links">
+        <a href="#">Inicio</a>
+        <a href="calc2.html">Calculadora</a>
+        <a href="equipamentos.html">Equipamentos</a>
+        <a href="calculadora/darksteel.html">Aço Negro</a>
+        <a href="calculadora/energia.html">Energia</a>
+        <a href="calculadora/xp.html">Experiência</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="info">
+        <img src="Images/inicio/arqueira.png" alt="arqueira" />
+        <h3>Ferramentas Mir4</h3>
+        <button data-modal-target="#modal" style="font-size: 25px;">Abrir Bloco</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Ferramentas</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="grid-container">
+            <!-- <div class="grid-item"><a href="calculadora/darksteel.html"><img src="images/craft/Dark_Steel.png" 
+              style="width: 65px; height: 65px;" alt=""></a></div> -->
+            <div class="grid-item"><a href="calculadora/darksteel.html">Aço Negro</a></div>  
+            <div class="grid-item"><a href="calculadora/xp.html">Experiencia</a></div>
+            <div class="grid-item"><a href="/equipamentos.html">Equipamentos</a></div>  
+            <div class="grid-item"><a href="calculadora/energia.html">Energia</a></div>
+            <div class="grid-item"><a href="/calc2.html">Criação</a></div>
+            <div class="grid-item"><a href="/tutorial.html">Tutorial</a></div>  
+            <div class="grid-item"><a href="#">Definir 1</a></div>  
+            <div class="grid-item"><a href="#">Definir 2</a></div>
+            <div class="grid-item"><a href="#">Definir 3</a></div>
+          </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
+      </div>
+    </div>
+    <script>
+      function contato() {
+        alert("Discord - Fernand0#1585\nTelegram - @nand0coin");
+      }
+      function sobre() {
+        alert(
+          "Site Desenvolvido por Fernand0#1585. Com a ideia de facilitar a evolução dentro do Mir4. \n \n Versão 1.0"
+        );
+      }
+    </script>
+    <footer>
+      <img src="images/inicio/mir4.png" alt="logo mir4" />
+      <span>© 2022 Mir4 Tools</span>
+      <div class="footer_links">
+        <a href="#">Inicio</a>
+        <a href="#" onclick="contato()">Contato</a>
+        <a href="paginas/donate.html">Apoie</a>
+        <a href="#" onclick="sobre()">Sobre</a>
+      </div>
+    </footer>
+  </body>
+</html>

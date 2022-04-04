@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon/energia.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/energia.css" />
+    <script src="assets/js/energia.js"></script>
+    <title>Calculo de Essencia</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="energia">
+        <h2>Calculadora de Energia</h2>
+        <form class="calculo" method="POST">
+          <label>Em Quantos Segundos Você Recolhe?</label>
+          <br />
+          <input type="number" id="cadarecolha">
+          <br />
+          <label>Media de Energia Recolhida por Vez?</label>
+          <br />
+          <input type="number" id="revez">
+          <br />
+        </form>
+        <br />
+        <br>
+        <button onclick="calculo()">Calcular</button>
+        <br />
+        <br />
+        <div id="resultado"></div>
+      </div>
+    </div>
+  </body>
+</html>

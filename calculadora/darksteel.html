@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon/darksteel.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/ds.css" />
+    <script src="assets/js/ds.js"></script>
+    <title>Calculo de Aço Negro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="darksteel">
+        <h2>Calculadora de Aço Negro</h2>
+        <form class="calculo" method="POST">
+          <label>Em Quantos Segundos Você Minera?</label>
+          <br />
+          <input type="number" id="cadaminerada">
+          <br />
+          <label>Media de Dark Steel Minerado por Vez?</label>
+          <br />
+          <input type="number" id="dsvez">
+          <br />
+          <label>Tempo Restante em Minuto?</label>
+          <br />
+          <input type="number" id="tempores">
+          <br>
+        </form>
+        <br />
+        <br>
+        <button onclick="calculo()">Calcular</button>
+        <br />
+        <div id="resultado"></div>
+      </div>
+    </div>
+  </body>
+</html>

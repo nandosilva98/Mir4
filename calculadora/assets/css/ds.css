@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mukta:wght@200&family=Oswald:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: var(--fundoimg3);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --texto: white;
+  --fundo: grey;
+  --fundo2: #1a1a1a;
+  --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1842536456297752183/3B5F5CDBF7CB08DD6557A627BA5E0B8B705B05E7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
+  --fundoimg3: url("/images/calculadora/fundo_ds.png");
+  --font: "Mukta";
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.darksteel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px #110239;
+  background-color: #110239b7;
+  width: 40%;
+  height: 650px;
+  margin-top: 150px;
+}
+
+.darksteel > h2 {
+  padding-bottom: 20px;
+  color: var(--texto);
+  font-family: var(--font);
+}
+
+.calculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculo label {
+   font-size: 19px; 
+}
+
+.calculo > input {
+  border-radius: 12px;
+  border: none;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.calculo > input:hover {
+  border: 1px solid #18422a;
+}
+
+button {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #3B3B3B;
+    color: white;
+}
+
+select {
+  font-size: 17px;
+}
+
+#resultado {
+  font-size: 20px;
+  text-align: center;
+  color: var(--texto);
+}
+
+/* .cripto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px #070157;
+  background-color: #0d02a7;
+  width: 40%;
+  height: 500px;
+  margin-top: 200px;
+}
+
+.cripto h2 {
+  color: var(--texto);
+  position: absolute;
+  margin-left: 12px;
+  margin-bottom: 320px;
+  font-family: var(--font);
+} 
+
+img {
+  transition: 1s;
+}
+.efeito:hover {
+  transform: scale(1.6);
+} */

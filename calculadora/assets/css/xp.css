@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mukta:wght@200&family=Oswald:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: var(--fundoimg4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --texto: #000000;
+  --texto2: #d0ff00;
+  --texto3: #00eeff;
+  --fundo: grey;
+  --fundo2: #1a1a1a;
+  --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1842536456297752183/3B5F5CDBF7CB08DD6557A627BA5E0B8B705B05E7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
+  --fundoimg3: url(https://nandonweb.github.io/Mir4/mir4_2.jpeg);
+  --fundoimg4: url("/images/calculadora/fundo_exp2.png");
+  --font: "Mukta";
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.xp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px #c077509f;
+  background-color: #c077509a;
+  width: 40%;
+  height: 750px;
+  margin-top: 80px;
+}
+
+.xp > h2 {
+  padding-bottom: 20px;
+  color: var(--texto);
+  font-family: var(--font);
+}
+
+.calculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculo label {
+   font-size: 20px; 
+}
+
+.calculo > input {
+  border-radius: 12px;
+  border: none;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.calculo > input:hover {
+  border: 1px solid #18422a;
+}
+
+label {
+  font-size: 20px;
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+button {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #3B3B3B;
+    color: white;
+}
+
+select {
+  font-size: 17px;
+}
+
+#resultado {
+  font-size: 21px;
+  text-align: center;
+  color: var(--texto3);
+}
+
+#resultadofarm {
+  font-size: 21px;
+  text-align: center;
+  color: var(--texto2);
+} 

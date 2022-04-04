@@ -1,0 +1,47 @@
+body {
+    background-color: grey;
+  }
+  .container {
+    background-color: #2196f3;
+    padding: 10px;
+    color: white;
+    width: 99%;
+    height: 771px;
+  }
+
+  .container > div {
+    background-color: #152C3F;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+  }
+
+  .item1 {
+    position: absolute;
+    left: 18px;
+    top: 16px;
+    width: 1211px;
+    height: 80px;
+  }
+  .item2 {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    width: 655px;
+    height: 732px;
+  }
+
+  .item2 img {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 0, 0, 0.76);
+    border: solid 2px rgba(153, 0, 0, 0.836);
+  }
+  .item3 {
+    position: absolute;
+    left: 18px;
+    top: 148px;
+    width: 1210px;
+    height: 600px;
+  }
+

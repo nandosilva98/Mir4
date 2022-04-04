@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mukta:wght@200&family=Oswald:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: var(--fundoimg4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --texto: white;
+  --fundo: grey;
+  --fundo2: #1a1a1a;
+  --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1690527987964181073/B73AE9E5ACC6E2C95444F33C8ED01E8CBDB618EF/?imw=1024&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+  --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
+  --fundoimg3: url("/images/calculadora/fundo_energia.png");
+  --fundoimg4: url("/images/calculadora/fundo_energia_2.png");
+  --font: "Mukta";
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.energia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px #0d6368;
+  background-color: #0d6368a2;
+  width: 40%;
+  height: 650px;
+  margin-top: 150px;
+}
+
+.energia > h2 {
+  padding-bottom: 20px;
+  color: var(--texto);
+  font-family: var(--font);
+}
+
+.calculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculo label {
+   font-size: 19px; 
+}
+
+.calculo > input {
+  border-radius: 12px;
+  border: none;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.calculo > input:hover {
+  border: 1px solid #18422a;
+}
+
+button {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #3B3B3B;
+    color: white;
+}
+
+label {
+  font-size: 17px;
+  font-family: Arial, sans-serif;
+}
+
+#resultado {
+  font-size: 18px;
+  text-align: center;
+  color: var(--texto);
+}
