@@ -88,6 +88,7 @@ function calculo() {
 	resultado.innerHTML += '<br><br>';
 
 	resultado.innerHTML += `Seu Farm Restante - ${n11} Dark Steel` + '<br>';
+	resultado.innerHTML += '<br>';
 	resultado.innerHTML += `1 Minuto - ${calculo2} Dark Steel` + '<br>';
 	resultado.innerHTML += `1 Hora - ${n7} Dark Steel` + '<br>';
 	resultado.innerHTML += `12 Horas - ${n8} Dark Steel` + '<br>';

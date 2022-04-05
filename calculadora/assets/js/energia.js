@@ -24,6 +24,10 @@ function calculo() {
 	var n7 = (calculo2 * tempo);
 	var n8 = (n7 * meio_dia);
 	var n9 = (n7 * dia);
+
+	var tempor = window.document.getElementById("tempores");
+	var n10 = Number(tempor.value);
+	var n11 = (n6 * n10);
 	
 	resultado.innerHTML = '';
 
@@ -34,7 +38,9 @@ function calculo() {
 	// resultado.innerHTML += `${n7} DS x ${dia} Horas = ${n9}`;
 
 	resultado.innerHTML += '<br><br>';
-
+    
+	resultado.innerHTML += `Seu Farm Restante - ${n11} de Energia` + '<br>';
+	resultado.innerHTML += '<br>';
 	resultado.innerHTML += `1 Minuto - ${calculo2} de Energia` + '<br>';
 	resultado.innerHTML += `1 Hora - ${n7} de Energia` + '<br>';
 	resultado.innerHTML += `12 Horas - ${n8} de Energia` + '<br>';

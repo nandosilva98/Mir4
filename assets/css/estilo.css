@@ -134,6 +134,7 @@ header a:hover {
   color: var(--cor_texto);
   transform: scale(1.2);
   transition: all 0.6s;
+  cursor: pointer;
 
 }
 
