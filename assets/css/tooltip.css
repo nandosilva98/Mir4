@@ -1,0 +1,802 @@
+/* TOOLTIP 1 */
+
+.container-topltip {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+  }
+  
+  .tooltip {
+    position: absolute;
+    left: 9.5%;
+    top: 27.5%;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip .conteudo {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #121212;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip .conteudo .cobre {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip .conteudo .po {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+    
+  
+  .tooltip .conteudo p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip .conteudo p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip .conteudo h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip .conteudo:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #121212;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip:hover .conteudo {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+  
+  
+  /* TOOLTIP 2 */
+  
+  .container-topltip2 {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #333;
+    }
+    
+    .tooltip2 {
+      position: absolute;
+      left: 21%;
+      top: 27.5%;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: #777;
+      border-radius: 50%;
+      margin: 0 20px;
+      border-radius: 50%;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    
+    .tooltip2:hover {
+      background: #86ff3b;
+      box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+    }
+    
+    .tooltip2 .conteudo2 {
+      position: absolute;
+      bottom: 55px;
+      width: 350px;
+      height: 200px;
+      background: #121212;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateX(-50%) translateY(-50px);
+    }
+    
+    .tooltip2 .conteudo2 .cobre2 {
+      position: absolute;
+      top: 60px;
+      left: 25px;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .tooltip2 .conteudo2 .po2 {
+        position: absolute;
+        top: 125px;
+        left: 32px;
+        width: 50px;
+        height: 50px;
+    }
+      
+    
+    .tooltip2 .conteudo2 p {
+        position: relative;
+        font-size: 21px;
+        margin-left: 90px;
+        padding: 10px;
+    }
+    
+    .tooltip2 .conteudo2 p {
+        position: relative;
+        font-size: 21px;
+        margin-left: 90px;
+        padding: 10px;
+    }
+    
+    .tooltip2 .conteudo2 h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    
+    .tooltip2 .conteudo2:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #121212;
+      bottom: -15px;
+      left: 174px;
+      transform: rotate(45deg);
+    }
+    
+    .tooltip2:hover .conteudo2 {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0px);
+    }
+  
+    /* TOOLTIP 3 */
+  
+  .container-topltip3 {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #333;
+    }
+    
+    .tooltip3 {
+      position: absolute;
+      left: 32.7%;
+      top: 27.5%;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: #777;
+      border-radius: 50%;
+      margin: 0 20px;
+      border-radius: 50%;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    
+    .tooltip3:hover {
+      background: #86ff3b;
+      box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+    }
+    
+    .tooltip3 .conteudo3 {
+      position: absolute;
+      bottom: 55px;
+      width: 350px;
+      height: 200px;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+      transform: translateX(-50%) translateY(-50px);
+    }
+    
+    .tooltip3 .conteudo3 .cobre3 {
+      position: absolute;
+      top: 60px;
+      left: 25px;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .tooltip3 .conteudo3 .po3 {
+        position: absolute;
+        top: 125px;
+        left: 32px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .tooltip3 .conteudo3 p {
+        position: relative;
+        font-size: 21px;
+        margin-left: 90px;
+        padding: 10px;
+    }
+    
+    .tooltip3 .conteudo3 p {
+        position: relative;
+        font-size: 21px;
+        margin-left: 90px;
+        padding: 10px;
+    }
+    
+    .tooltip3 .conteudo3 h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    
+    .tooltip3 .conteudo3:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      bottom: -15px;
+      left: 174px;
+      transform: rotate(45deg);
+    }
+    
+    .tooltip3:hover .conteudo3 {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0px);
+    }
+
+    /* TOOLTIP 4 */
+  
+   .container-topltip4 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+  }
+  
+  .tooltip4 {
+    position: absolute;
+    left: 44.2%;
+    top: 27.5%;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip4:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip4 .conteudo4 {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip4 .conteudo4 .cobre4 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip4 .conteudo4 .po4 {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .tooltip4 .conteudo4 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip4 .conteudo4 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip4 .conteudo4 h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip4 .conteudo4:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip4:hover .conteudo4 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+
+  /* TOOLTIP 5 */
+  
+  /* .container-topltip3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+  }
+  
+  .tooltip3 {
+    position: absolute;
+    left: 21%;
+    top: 27.5%;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip3:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip3 .conteudo3 {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip3 .conteudo3 .cobre3 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 .po3 {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip3 .conteudo3:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip3:hover .conteudo3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+
+  /* TOOLTIP 6 */
+  
+  /* .container-topltip3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+  }
+  
+  .tooltip3 {
+    position: absolute;
+    left: 21%;
+    top: 27.5%; 
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip3:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip3 .conteudo3 {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip3 .conteudo3 .cobre3 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 .po3 {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip3 .conteudo3:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip3:hover .conteudo3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  }
+
+  /* TOOLTIP 7 */
+  
+  /* .container-topltip3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+  }
+  
+  .tooltip3 {
+    position: absolute;
+    left: 21%;
+    top: 27.5%;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip3:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip3 .conteudo3 {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip3 .conteudo3 .cobre3 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 .po3 {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip3 .conteudo3:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip3:hover .conteudo3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  } */
+
+  /* TOOLTIP 8 */
+  
+  /* .container-topltip3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: #333;
+  }
+  
+  .tooltip3 {
+    position: absolute;
+    left: 21%;
+    top: 27.5%;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .tooltip3:hover {
+    background: #86ff3b;
+    box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
+  }
+  
+  .tooltip3 .conteudo3 {
+    position: absolute;
+    bottom: 55px;
+    width: 350px;
+    height: 200px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+  }
+  
+  .tooltip3 .conteudo3 .cobre3 {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 .po3 {
+      position: absolute;
+      top: 125px;
+      left: 32px;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 p {
+      position: relative;
+      font-size: 21px;
+      margin-left: 90px;
+      padding: 10px;
+  }
+  
+  .tooltip3 .conteudo3 h2 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  
+  .tooltip3 .conteudo3:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 174px;
+    transform: rotate(45deg);
+  }
+  
+  .tooltip3:hover .conteudo3 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+  } */
