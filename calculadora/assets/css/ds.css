@@ -87,29 +87,22 @@ select {
   color: var(--texto);
 }
 
-/* .cripto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 3px 4px 10px #070157;
-  background-color: #0d02a7;
-  width: 40%;
-  height: 500px;
-  margin-top: 200px;
-}
-
-.cripto h2 {
-  color: var(--texto);
+.anuncio {
   position: absolute;
-  margin-left: 12px;
-  margin-bottom: 320px;
-  font-family: var(--font);
-} 
-
-img {
-  transition: 1s;
+  top: 260px;
+  left: 60px;
+  width: 350px;
+  height: 480px;
+  background-color: chocolate;
 }
-.efeito:hover {
-  transform: scale(1.6);
+
+.anuncio img {
+  width: 100%
+}
+
+/* .anuncio h1 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
 } */

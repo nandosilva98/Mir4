@@ -12,7 +12,7 @@
   
   .tooltip {
     position: absolute;
-    left: 9.5%;
+    left: 44.2%;
     top: 27.5%;
     list-style: none;
     width: 20px;
@@ -32,9 +32,9 @@
   
   .tooltip .conteudo {
     position: absolute;
-    bottom: 55px;
+    top: 55px;
     width: 350px;
-    height: 200px;
+    height: 400px;
     background: #121212;
     padding: 20px;
     box-sizing: border-box;
@@ -85,11 +85,12 @@
   .tooltip .conteudo:before {
     content: "";
     position: absolute;
+    top: -9px;
     width: 30px;
     height: 30px;
     background: #121212;
     bottom: -15px;
-    left: 174px;
+    left: 170px;
     transform: rotate(45deg);
   }
   
@@ -98,11 +99,13 @@
     opacity: 1;
     transform: translateX(-50%) translateY(0px);
   }
+
+  
   
   
   /* TOOLTIP 2 */
   
-  .container-topltip2 {
+  /* .container-topltip2 {
       margin: 0;
       padding: 0;
       display: flex;
@@ -200,10 +203,10 @@
       opacity: 1;
       transform: translateX(-50%) translateY(0px);
     }
-  
+   */
     /* TOOLTIP 3 */
   
-  .container-topltip3 {
+  /* .container-topltip3 {
       margin: 0;
       padding: 0;
       display: flex;
@@ -299,11 +302,11 @@
       visibility: visible;
       opacity: 1;
       transform: translateX(-50%) translateY(0px);
-    }
+    } */
 
     /* TOOLTIP 4 */
   
-   .container-topltip4 {
+   /* .container-topltip4 {
     margin: 0;
     padding: 0;
     display: flex;
@@ -399,7 +402,7 @@
     visibility: visible;
     opacity: 1;
     transform: translateX(-50%) translateY(0px);
-  }
+  } */
 
   /* TOOLTIP 5 */
   

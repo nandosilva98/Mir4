@@ -123,10 +123,19 @@ header a:hover {
 
 .info > button {
   position: absolute;
-  right: -72%;
+  right: -78%;
   top: 60%;
-  background-color: #7B7B7B;
-  color: var(--cor_texto)
+  background-color: #1b1a63;
+  color: var(--cor_texto);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 1px 3px 10px #000;
+  cursor: pointer;
 }
 
 .info button:hover {
@@ -199,8 +208,8 @@ header a:hover {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 11px;
+  /* background-color: #2196F3; */
+  /* padding: 11px; */
 }
 
 .grid-item {
@@ -208,7 +217,7 @@ header a:hover {
   border: 1px solid #000000cc;
   padding: 20px;
   height: 110px;
-  font-size: 30px;
+  font-size: 28px;
   color: white;
   text-align: center;
 }
