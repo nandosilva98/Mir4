@@ -34,7 +34,7 @@
     position: absolute;
     top: 55px;
     width: 350px;
-    height: 400px;
+    height: 275px;
     background: #121212;
     padding: 20px;
     box-sizing: border-box;
@@ -47,18 +47,18 @@
   
   .tooltip .conteudo .cobre {
     position: absolute;
-    top: 60px;
+    top: 43px;
     left: 25px;
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
   }
   
   .tooltip .conteudo .po {
       position: absolute;
-      top: 125px;
+      top: 158px;
       left: 32px;
-      width: 50px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
   }
     
   
@@ -100,7 +100,22 @@
     transform: translateX(-50%) translateY(0px);
   }
 
-  
+  /* ================================= TABELAS ================================= */
+
+  .tabela  {
+   position: absolute;
+   left: 48%;
+   text-align: center;
+   /* background-color: rgb(255, 0, 0); */
+  }
+
+  .tabela2  {
+    position: absolute;
+    top: 152px;
+    left: 48%;
+    text-align: center;
+    /* background-color: rgb(255, 0, 0); */
+   }
   
   
   /* TOOLTIP 2 */
