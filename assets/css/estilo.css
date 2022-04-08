@@ -231,12 +231,53 @@ header a:hover {
   color: red;
 }
 
-/* .grid-item img {
+.grid-item .ds {
   position: absolute;
-  bottom: 65%;
-  left: -9.9%;
-} */
+  bottom: 50%;
+  left: -6.9%;
+  width: 65px;
+  height: 65px;
+}
 
+.grid-item .exp {
+  position: absolute;
+  bottom: 50%;
+  left: 26.9%;
+  width: 65px;
+  height: 65px;
+}
+
+.grid-item .equip {
+  position: absolute;
+  bottom: 50%;
+  left: 60.2%;
+  width: 65px;
+  height: 65px;
+}
+
+.grid-item .energia {
+  position: absolute;
+  bottom: 9%;
+  left: -6.8%;
+  width: 65px;
+  height: 65px;
+}
+
+.grid-item .tutorial {
+  position: absolute;
+  bottom: 9%;
+  left: 26.9%;
+  width: 65px;
+  height: 65px;
+}
+
+.grid-item .criacao {
+  position: absolute;
+  bottom: 9%;
+  left: 60.2%;
+  width: 65px;
+  height: 65px;
+}
 
 
 footer {
@@ -307,9 +348,33 @@ footer a:hover {
   }
 }
 
-/* Desktop */
+/* Desktop 1 */
+
 @media screen {
   @media (min-width: 1025px) {
+    body {
+      /* background-image: url(/assets/images/desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+  }
+}
+
+/* Desktop 2 */
+@media screen {
+  @media (min-width: 1366px) {
+    body {
+      /* background-image: url(/assets/images/desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+  }
+}
+
+/* * Desktop 3 */
+
+@media screen {
+  @media (min-width: 1920px) {
     body {
       /* background-image: url(/assets/images/desktop.jpg);
       background-repeat: no-repeat;

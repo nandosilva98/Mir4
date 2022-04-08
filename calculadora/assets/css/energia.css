@@ -89,3 +89,62 @@ label {
   text-align: center;
   color: var(--texto);
 }
+
+/* RESPONSIVIDADE */
+
+/* Mobile */
+@media screen {
+  @media (max-width: 480px) {
+    body {
+      background-image: url(/assets/images/mobile/celular.png);;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+/* Tablet */
+@media screen {
+  @media (min-width: 481px) and (max-width: 1024px) {
+    body {
+      background-image: url(/assets/mobile/tablet.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+/* Desktop 1 */
+
+@media screen {
+  @media (min-width: 1025px) {
+    body {
+      /* background-image: url(/assets/images/desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+  }
+}
+
+/* Desktop 2 */
+@media screen {
+  @media (min-width: 1366px) {
+    body {
+      /* background-image: url(/assets/images/desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+  }
+}
+
+/* * Desktop 3 */
+
+@media screen {
+  @media (min-width: 1920px) {
+    body {
+      /* background-image: url(/assets/images/desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+  }
+}

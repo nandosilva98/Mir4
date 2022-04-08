@@ -105,6 +105,10 @@ body {
   box-shadow: 0px 0px 5px #000 inset;
 }
 
+.total {
+  text-align: center;
+}
+
 .cor_1 {
   background: var(--backgrond-color-menu-container-1);
 }
