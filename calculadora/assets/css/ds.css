@@ -54,7 +54,7 @@ body {
 }
 
 .calculo label {
-   font-size: 19px; 
+   font-size: 19px;
 }
 
 .calculo > input {
@@ -67,6 +67,11 @@ body {
 
 .calculo > input:hover {
   border: 1px solid #18422a;
+}
+
+label {
+  font-size: 20px;
+  color: white;
 }
 
 button {
