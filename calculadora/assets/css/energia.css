@@ -94,22 +94,48 @@ label {
 
 /* Mobile */
 @media screen {
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     body {
-      background-image: url(/assets/images/mobile/celular.png);;
+      background-image: url(/images/mobile/celular.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+  }
+  .energia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 4px 10px #0000009d;
+    background-color: #0000009d;
+    width: 420px;
+    height: 700px;
   }
 }
 
 /* Tablet */
 @media screen {
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/assets/mobile/tablet.png);
+      background-image: url(/images/mobile/mobile_maga.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .energia {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 3px 4px 10px #0000009d;
+      background-color: #0000009d;
+      width: 60%;
+      height: 700px;
     }
   }
 }
@@ -147,4 +173,5 @@ label {
       background-size: cover; */
     }
   }
+}
 }

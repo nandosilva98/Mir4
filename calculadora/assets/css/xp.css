@@ -21,7 +21,7 @@ body {
   --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1842536456297752183/3B5F5CDBF7CB08DD6557A627BA5E0B8B705B05E7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
   --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
   --fundoimg3: url(https://nandonweb.github.io/Mir4/mir4_2.jpeg);
-  --fundoimg4: url("/images/calculadora/fundo_exp2.png");
+  --fundoimg4: url("/images/calculadora/fundo_exp.png");
   --font: "Mukta";
 }
 
@@ -37,8 +37,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  box-shadow: 3px 4px 10px #c077509f;
-  background-color: #c077509a;
+  box-shadow: 3px 4px 10px #41745567;
+  background-color: #2c48377a;
   width: 40%;
   height: 750px;
   margin-top: 80px;
@@ -107,22 +107,42 @@ select {
 
 /* Mobile */
 @media screen {
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     body {
-      background-image: url(/assets/images/mobile/celular.png);;
+      background-image: url(/images/mobile/celular.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: white;
+  }
+  .xp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 4px 10px #0000009d;
+    background-color: #0000009d;
+    width: 420px;
+    height: 700px;
   }
 }
 
 /* Tablet */
 @media screen {
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/assets/mobile/tablet.png);
+      background-image: url(/images/mobile/mobile_maga.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .xp {
+      width: 48%;
+      height: 700px;
     }
   }
 }
@@ -160,4 +180,6 @@ select {
       background-size: cover; */
     }
   }
+}
+
 }
