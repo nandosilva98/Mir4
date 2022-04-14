@@ -330,7 +330,7 @@ footer a:hover {
 @media screen {
   @media (max-width: 480px) {
     body {
-      background-image: url(/assets/images/mobile/celular.png);;
+      background-image: url(/images/mobile/celular.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -339,9 +339,9 @@ footer a:hover {
 
 /* Tablet */
 @media screen {
-  @media (min-width: 481px) and (max-width: 1024px) {
+  @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/assets/mobile/tablet.png);
+      background-image: url(/images/mobile/mobile_maga.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }

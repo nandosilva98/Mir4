@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <title>Donate</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mukta:wght@200&family=Oswald:wght@200;300;400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Mukta:wght@200&family=Oswald:wght@200;300;400;700&display=swap");
 
       * {
         margin: 0;
         padding: 0;
       }
-
 
       body {
         background: var(--fundo2);
@@ -24,7 +23,7 @@
         --texto: white;
         --fundo: grey;
         --fundo2: url(/images/donate/fundo.png);
-        --font: 'Mukta';
+        --font: "Mukta";
       }
 
       .parente {
@@ -72,11 +71,58 @@
         font-family: var(--font);
       }
 
-      img{
+      img {
         transition: 1s;
       }
       .efeito:hover {
         transform: scale(1.6);
+      }
+
+      /* RESPONSIVIDADE */
+
+      /* Mobile */
+      @media screen {
+        @media (max-width: 590px) {
+          body {
+            background-image: url(/images/mobile/celular.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .parente {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+          }
+          .pix {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 4px 10px #0000009d;
+            background-color: #0000009d;
+            margin-top: 20px;
+            width: 320px;
+            height: 400px;
+          }
+          .cripto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 4px 10px #070157;
+            background-color: #0d02a7;
+            margin-top: 50px;
+            width: 320px;
+            height: 400px;
+          }
+          .pix {
+            display: flex;
+            box-shadow: 3px 4px 10px #18422a;
+            background-color: #1b4d31;
+          }
+        }
       }
     </style>
   </head>
@@ -84,11 +130,11 @@
     <div class="parente">
       <div class="pix">
         <h2>Reais - Pix</h2>
-        <img src="../images/donate/livepix.png" class="efeito">
+        <img src="../images/donate/livepix.png" class="efeito" />
       </div>
       <div class="cripto">
         <h2>Criptomoedas - Rede BSC</h2>
-        <img src="../images/donate/MetaMask_BSC.png" class="efeito">
+        <img src="../images/donate/MetaMask_BSC.png" class="efeito" />
       </div>
     </div>
   </body>
