@@ -146,7 +146,7 @@ label {
   @media (min-width: 1280px) and (max-width: 1370px) {
     .energia {
       display: flex;
-      margin-top: -50px;
+      margin-top: -30px;
     }
   }
 }
