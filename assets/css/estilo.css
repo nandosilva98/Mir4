@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -10,9 +12,17 @@ body {
   position: relative;
   width: 757px;
   height: 846px;
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0f9b0f,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0f9b0f,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .menu {
@@ -45,21 +55,16 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
-
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #333;
-  position: fixed;
   top: -30px;
   left: 0;
-  width: 250%;
-  height: 110px;
+  width: 1912px;
+  height: 75px;
   background-color: black;
   font-size: 23px;
   color: rgb(0, 0, 0);
@@ -67,7 +72,8 @@ header {
 }
 
 header span {
-  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
   right: -150px;
   color: var(--cor_texto);
 }
@@ -77,9 +83,8 @@ header span:hover {
 }
 
 .header_links {
-  position: absolute;
-  left: 710px;
-} 
+  margin-left: 220px;
+}
 
 header a {
   margin: 45px;
@@ -88,7 +93,7 @@ header a {
 }
 
 header img {
-  position: absolute;
+  margin-left: 170px;
   width: 160px;
   height: 65px;
   left: 285px;
@@ -100,10 +105,10 @@ header a:hover {
 }
 
 .container {
-  /* display:none */
+  display: flex;
 }
 
-.container img{
+.container img {
   margin-top: 90px;
   margin-left: 100px;
   width: 720px;
@@ -144,7 +149,6 @@ header a:hover {
   transform: scale(1.2);
   transition: all 0.6s;
   cursor: pointer;
-
 }
 
 /* Abrir Bloco / Open Modal */
@@ -172,7 +176,7 @@ header a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1E1B24;
+  background-color: #1e1b24;
   border-bottom: 1px solid black;
 }
 
@@ -194,7 +198,7 @@ header a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -213,7 +217,7 @@ header a:hover {
 }
 
 .grid-item {
-  background-color: #152C3F;
+  background-color: #152c3f;
   border: 1px solid #000000cc;
   padding: 20px;
   height: 110px;
@@ -224,10 +228,10 @@ header a:hover {
 
 .grid-item a {
   text-decoration: none;
-  color: var(--color)
+  color: var(--color);
 }
 
-.grid-item a:hover{
+.grid-item a:hover {
   color: red;
 }
 
@@ -278,7 +282,6 @@ header a:hover {
   width: 65px;
   height: 65px;
 }
-
 
 footer {
   border-top: 1px solid #333;
@@ -339,7 +342,7 @@ footer a:hover {
 
 /* Tablet */
 @media screen {
-  @media (min-width: 581px) and (max-width: 1000px) {
+  @media (min-width: 581px) and (max-width: 1025px) {
     body {
       background-image: url(/images/mobile/mobile_maga.jpg);
       background-repeat: no-repeat;
@@ -351,34 +354,131 @@ footer a:hover {
 /* Desktop 1 */
 
 @media screen {
-  @media (min-width: 1025px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
+  @media (min-width: 1280px) and (max-width: 1370px) {
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      top: -30px;
+      left: 0;
+      width: 1370px;
+      height: 75px;
+      background-color: black;
+      font-size: 23px;
+      color: rgb(0, 0, 0);
+      line-height: 135px;
     }
-  }
-}
 
-/* Desktop 2 */
-@media screen {
-  @media (min-width: 1366px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
+    header span {
+      display: flex;
+      flex-direction: row-reverse;
+      right: -150px;
+      color: var(--cor_texto);
     }
-  }
-}
 
-/* * Desktop 3 */
+    header span:hover {
+      color: red;
+    }
 
-@media screen {
-  @media (min-width: 1920px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
+    .header_links {
+      margin-left: 130px;
+      font-size: 18px;
+    }
+
+    header a {
+      margin: 10px;
+      color: var(--cor_texto);
+      text-decoration: none;
+    }
+
+    header img {
+      margin-left: -220px;
+      width: 160px;
+      height: 65px;
+      left: 285px;
+      bottom: 5px;
+    }
+
+    header a:hover {
+      color: red;
+    }
+    
+    /* MEIO */
+
+    .container {
+      display: flex;
+    }
+    
+    .container img {
+      margin-top: 160px;
+      margin-left: 90px;
+      width: 440px;
+      height: 340px;
+    }
+    
+    .container h3 {
+      position: absolute;
+      top: 260px;
+      left: 690px;
+      color: #fff;
+      font-size: 55px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    .info > button {
+      display: none;
+    }
+
+    /* RODAPE */
+
+    footer {
+      border-top: 1px solid #333;
+      bottom: 0;
+      left: 0;
+      width: 1370px;
+      height: 90px;
+      position: fixed;
+      text-align: center;
+      line-height: 110px;
+      font-size: 22px;
+      background-color: #000000;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    
+    footer span {
+      position: absolute;
+      left: 390px;
+      word-spacing: 2px;
+      color: var(--cor_texto);
+      font-size: 17px;
+    }
+    
+    .footer_links {
+      position: absolute;
+      margin-right: 100px;
+      font-size: 17px;
+    }
+
+    footer a {
+      margin: 25px;
+      color: var(--cor_texto);
+      text-decoration: none;
+    }
+    
+    footer img {
+      position: absolute;
+      width: 165px;
+      height: 65px;
+      left: 105px;
+      bottom: 9px;
+    }
+    
+    footer a:hover {
+      color: red;
     }
   }
 }
