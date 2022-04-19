@@ -358,7 +358,7 @@ footer a:hover {
     body {
       position: relative;
       width: 557px;
-      height: 646px;
+      height: 630px;
       background: #000000; 
       background: -webkit-linear-gradient(
         to top,
@@ -428,15 +428,15 @@ footer a:hover {
     }
     
     .container img {
-      margin-top: 65px;
+      margin-top: 40px;
       margin-left: 90px;
-      width: 440px;
-      height: 340px;
+      width: 480px;
+      height: 380px;
     }
     
     .container h3 {
       position: absolute;
-      top: 150px;
+      top: 130px;
       left: 690px;
       color: #fff;
       font-size: 55px;
@@ -457,7 +457,7 @@ footer a:hover {
       bottom: 0;
       left: 0;
       width: 1370px;
-      height: 90px;
+      height: 75px;
       position: fixed;
       text-align: center;
       line-height: 110px;
@@ -488,8 +488,8 @@ footer a:hover {
     
     footer img {
       position: absolute;
-      width: 165px;
-      height: 65px;
+      width: 150px;
+      height: 55px;
       left: 130px;
       bottom: 9px;
     }
