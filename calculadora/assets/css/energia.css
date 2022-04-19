@@ -143,11 +143,10 @@ label {
 /* Desktop 1 */
 
 @media screen {
-  @media (min-width: 1025px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
+  @media (min-width: 1280px) and (max-width: 1370px) {
+    .energia {
+      display: flex;
+      margin-top: -50px;
     }
   }
 }
