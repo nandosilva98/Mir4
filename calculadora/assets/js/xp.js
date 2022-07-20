@@ -1,43 +1,31 @@
 function calculo() {
 
-    var resultado = window.document.querySelector("#resultado");
+    let resultado = window.document.querySelector("#resultado");
 
-    var cinco = window.document.getElementById("5porcem");
-    var atual = window.document.querySelector("input#porcematual");
+    let cinco = window.document.getElementById("5porcem");
+    let atual = window.document.querySelector("input#porcematual");
 
-    var n0 = Number(atual.value);
-    var n1 = Number(cinco.value);
+    let n0 = Number(atual.value);
+    let n1 = Number(cinco.value);
 
-    var cinco2 = 5;
-    var cem = 100;
+    let cinco2 = 5;
+    let cem = 100;
 
-    var divisaocincoporcemporum = (n1 / cinco2);
-    var n2 = Number(divisaocincoporcemporum)
+    let divisaocincoporcemporum = (n1 / cinco2);
+    let n2 = Number(divisaocincoporcemporum)
 
-    var cemporcem = (n2 * cem);
-    var n3 = Number(cemporcem);
+    let cemporcem = (n2 * cem);
+    let n3 = Number(cemporcem);
 
    
-    var umporcemporcem = (n0 * n2);
-    var n4 = Number(umporcemporcem);
+    let umporcemporcem = (n0 * n2);
+    let n4 = Number(umporcemporcem);
     
     
     quantofalta = (n3 - n4);
     n5 = Number(quantofalta);
 
-    var test = (10 * 5);
-
-    
-    // Resultado no Console
-    // console.log(n1);
-    // console.log(n2);
-    // console.log(n3);
-    // console.log(n4);
-    // console.log(n5);
-    // console.log(quantofalta)
-    // console.log(n6);
-    // console.log(n7);
-    // console.log(n8);
+    let test = (10 * 5);
 
     resultado.innerHTML += `Total do Level Atual <strong>${n3}</strong> de Experiência` + '<br>';
 	resultado.innerHTML += `Faltam <strong>${n5}</strong> de Experiência` + '<br>';
@@ -45,38 +33,39 @@ function calculo() {
 }
 
 function calculo2() {
-    var resultado2 = window.document.querySelector("#resultadofarm");
+    let resultado2 = window.document.querySelector("#resultadofarm");
     
-    var xp_res = window.document.getElementById("restante");
-    var n6 = Number(xp_res.value);
+    let xp_res = window.document.getElementById("restante");
+    let n6 = Number(xp_res.value);
 
-    var monstro = window.document.getElementById("xpmob");
-    var n7 = Number(monstro.value);
+    let monstro = window.document.getElementById("xpmob");
+    let n7 = Number(monstro.value);
 
-    var segundos = window.document.getElementById("segmob");
-    var n8 = Number(segundos.value);
+    let segundos = window.document.getElementById("segmob");
+    let n8 = Number(segundos.value);
 
-    var mobsfaltam = (n6 / n7);
-    var n9 = Number(mobsfaltam);
+    let mobsfaltam = (n6 / n7);
+    let n9 = Number(mobsfaltam);
 
-    var mob_por_minuto = (60 / n8);
-    var n10 = Number(mob_por_minuto);
+    let mob_por_minuto = (60 / n8);
+    let n10 = Number(mob_por_minuto);
 
-    var xp_por_minuto = (n10 * n7);
-    var n11 = Number(xp_por_minuto);
+    let xp_por_minuto = (n10 * n7);
+    let n11 = Number(xp_por_minuto);
 
-    var xp_por_hora = (n11 * 60);
-    var n12 = Number(xp_por_hora);
+    let xp_por_hora = (n11 * 60);
+    let n12 = Number(xp_por_hora);
 
-    var horas_totais_up = (n6 / n12);
-    var n13 = Number(horas_totais_up);
+    let horas_totais_up = (n6 / n12);
+    let n13 = Number(horas_totais_up);
 
-    var tempo_de_farm = window.document.getElementById("tempofarmxp");
-	var n14 = Number(tempo_de_farm.value);
-	var n15 = (n11 * n14);
+    let tempo_de_farm = window.document.getElementById("tempofarmxp");
+	let n14 = Number(tempo_de_farm.value);
+	let n15 = (n11 * n14);
 
      // Resultado Farm
 
+     resultado.innerHTML = '';
      resultado.innerHTML = '';
      resultado.innerHTML += '<br><br>';
 
