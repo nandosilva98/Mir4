@@ -28,11 +28,11 @@ body {
   font-size: 17px!important;
 }
 
-.container {
+.conteudo {
   display: flex;
 }
 
-.container h3 {
+.conteudo h3 {
   position: absolute;
   top: 200px;
   left: 100px;
@@ -45,13 +45,74 @@ body {
 
 /* RESPONSIVIDADE
 
-/* Mobile */
+/* Under 320px Mobile */
 @media screen {
-  @media (max-width: 480px) {
+  @media (max-width: 320px){
+    body {
+      background-image: none;
+    }
+    .conteudo h3 {
+    display: none;
+    }
+  }
+}
+
+/* Under Mobile 2 */
+@media screen {
+  @media (min-width: 320px) and (max-width: 369px){
     body {
       background-image: url(/images/mobile/celular.png);
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .conteudo h3 {
+      position: absolute;
+      top: 140px;
+      left: 230px;
+      color: #fff;
+      font-size: 17px;
+      text-shadow: 2px 2px 2px #000;
+      font-family: 'Caudex', serif;
+    }
+  }
+}
+
+/* Under Mobile */
+@media screen {
+  @media (min-width: 370px) and (max-width: 485px){
+    body {
+      background-image: url(/images/mobile/celular.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .conteudo h3 {
+      position: absolute;
+      top: 140px;
+      left: 250px;
+      color: #fff;
+      font-size: 22px;
+      text-shadow: 2px 2px 2px #000;
+      font-family: 'Caudex', serif;
+    }
+  }
+}
+
+/* Mobile */
+@media screen {
+  @media (min-width: 486px) and (max-width: 580px){
+    body {
+      background-image: url(/images/mobile/celular.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .conteudo h3 {
+      position: absolute;
+      top: 140px;
+      left: 290px;
+      color: #fff;
+      font-size: 35px;
+      text-shadow: 2px 2px 2px #000;
+      font-family: 'Caudex', serif;
     }
   }
 }
@@ -60,9 +121,23 @@ body {
 @media screen {
   @media (min-width: 581px) and (max-width: 1025px) {
     body {
-      background-image: url(/images/mobile/mobile_maga.jpg);
+      background-image: url(/images/mobile/tablet.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .conteudo h3 {
+      position: absolute;
+      top: 200px;
+      left: 90px;
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      text-shadow: 2px 2px 2px #000;
+      font-family: 'Caudex', serif;
+    }
+    .footer-text {
+      margin-left: 65px!important;
+      font-size: 14px!important;
     }
   }
 }
@@ -72,146 +147,6 @@ body {
 @media screen {
   @media (min-width: 1280px) and (max-width: 1370px) {
     body {
-      position: relative;
-      width: 557px;
-      height: 630px;
-      background: #000000; 
-      background: -webkit-linear-gradient(
-        to top,
-        #0f9b0f,
-        #000000
-      ); 
-      background: linear-gradient(
-        to top,
-        #0f9b0f,
-        #000000
-      ); 
-    }
-    header {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 1px solid #333;
-      top: -30px;
-      left: 0;
-      width: 1370px;
-      height: 75px;
-      background-color: black;
-      font-size: 23px;
-      color: rgb(0, 0, 0);
-      line-height: 135px;
-    }
-
-    header span {
-      display: flex;
-      flex-direction: row-reverse;
-      right: -150px;
-      color: var(--cor_texto);
-    }
-
-    header span:hover {
-      color: red;
-    }
-
-    .header_links {
-      margin-left: 220px;
-      font-size: 22px;
-    }
-
-    header a {
-      margin: 10px;
-      color: var(--cor_texto);
-      text-decoration: none;
-    }
-
-    header img {
-      margin-left: 30px;
-      width: 160px;
-      height: 65px;
-      left: 285px;
-      bottom: 5px;
-    }
-
-    header a:hover {
-      color: red;
-    }
-    
-    /* MEIO */
-
-    .container {
-      display: flex;
-    }
-    
-    .container img {
-      margin-top: 40px;
-      margin-left: 90px;
-      width: 480px;
-      height: 380px;
-    }
-    
-    .container h3 {
-      position: absolute;
-      top: 130px;
-      left: 690px;
-      color: #fff;
-      font-size: 55px;
-      font-weight: bold;
-      text-align: center;
-      text-shadow: 2px 2px 2px #000;
-    }
-
-    .info > button {
-      display: none;
-    }
-
-
-    /* RODAPE */
-
-    footer {
-      border-top: 1px solid #333;
-      bottom: 0;
-      left: 0;
-      width: 1370px;
-      height: 75px;
-      position: fixed;
-      text-align: center;
-      line-height: 110px;
-      font-size: 22px;
-      background-color: #000000;
-      font-family: "Comic Sans MS", cursive, sans-serif;
-    }
-    
-    footer span {
-      position: absolute;
-      left: 430px;
-      word-spacing: 2px;
-      color: var(--cor_texto);
-      font-size: 17px;
-    }
-    
-    .footer_links {
-      position: absolute;
-      margin-right: -30px;
-      font-size: 20px;
-    }
-
-    footer a {
-      margin: 25px;
-      color: var(--cor_texto);
-      text-decoration: none;
-    }
-    
-    footer img {
-      position: absolute;
-      width: 150px;
-      height: 55px;
-      left: 130px;
-      bottom: 9px;
-    }
-    
-    footer a:hover {
-      color: red;
     }
   }
 }
