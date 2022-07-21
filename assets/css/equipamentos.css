@@ -28,7 +28,7 @@ body {
   );
 }
 
-.container {
+.container_equip {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

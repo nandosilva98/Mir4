@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: var(--fundoimg4);
+  background-image: var(--fundoimg3);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,8 +20,7 @@ body {
   --fundo2: #1a1a1a;
   --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1842536456297752183/3B5F5CDBF7CB08DD6557A627BA5E0B8B705B05E7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
   --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
-  --fundoimg3: url(https://nandonweb.github.io/Mir4/mir4_2.jpeg);
-  --fundoimg4: url("/images/calculadora/fundo_exp.png");
+  --fundoimg3: url("/images/calculadora/fundo_exp.png");
   --font: "Mukta";
 }
 
@@ -40,7 +39,7 @@ body {
   box-shadow: 3px 4px 10px #41745567;
   background-color: #2c48377a;
   width: 40%;
-  height: 750px;
+  height: 740px;
   margin-top: 80px;
 }
 
@@ -58,7 +57,7 @@ body {
 }
 
 .calculo > label {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   font-family: Arial, Helvetica, sans-serif
 }
@@ -75,26 +74,18 @@ body {
   border: 1px solid #18422a;
 }
 
-button {
-    font-size: 25px;
-    padding: 8px;
-    border-radius: 12px;
-    background-color: #3B3B3B;
-    color: white;
-}
-
 select {
   font-size: 17px;
 }
 
 #resultado {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
   color: var(--texto3);
 }
 
 #resultadofarm {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
   color: var(--texto2);
 } 

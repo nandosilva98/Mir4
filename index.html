@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/estilo.css" />
-    <script src="assets/js/script.js"></script>
-    <title>Pagina Inicial | Mir4</title>
-  </head>
-  <body>
-    <header>
-      <img src="images/inicio/mir4.png" alt="logo mir4" />
-      <div class="header_links">
-        <a href="#">Inicio</a>
-        <a href="equipamentos.html">Equipamentos</a>
-        <a href="calculadora/darksteel.html">Aço Negro</a>
-        <a href="calculadora/xp.html">Experiência</a>
-        <a href="calculadora/energia.html">Energia</a>
-        <a href="tutorial.html">Tutoriais</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mir4</title>
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <img src="images/favicon/favicon.ico" width="50" height="50" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculadora/darksteel.html">Aço Negro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculadora/energia.html">Energia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculadora/xp.html">Experiência</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/equipamentos.html">Equipamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paginas/tutorial.html">Tutoriais</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a href="paginas/donate.html" style="font-weight: 500;">Apoie</a>
+          <a href="#" onclick="sobre()" style="font-weight: 500;">Sobre</a>
+        </span>
       </div>
-    </header>
+    </div>
+  </nav>
+
+  <article>
     <div class="container">
       <div class="info">
-        <img src="images/inicio/arqueira.png" alt="arqueira" />
-        <h3>Ferramentas Mir4</h3>
-        <!-- <button data-modal-target="#modal" style="font-size: 25px;">Abrir Bloco</button>
-        <div class="modal" id="modal">
-          <div class="modal-header">
-            <div class="title">Ferramentas</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="grid-container">
-            <div class="grid-item"><a href="calculadora/darksteel.html"><img src="images/craft/Dark_Steel.png" class="ds" alt=""></a></div>
-            <div class="grid-item"><a href="calculadora/xp.html"><img src="images/craft/exp.png" class="exp" alt=""></a></div>
-            <div class="grid-item"><a href="/equipamentos.html"><img src="images/craft/Arma.png" class="equip" alt=""></a></div>  
-            <div class="grid-item"><a href="calculadora/energia.html"><img src="images/craft/Energia.png" class="energia" alt=""></a></div>
-            <div class="grid-item"><a href="/tutorial.html"><img src="images/craft/tutorial.png" class="tutorial" alt=""></a></div>  
-            <div class="grid-item"><a href="#" onclick="craft_equip()"><img src="images/craft/Escama.png" class="criacao" alt=""></a></div>
-          </div>
-          </div>
-        </div> -->
-        <div id="overlay"></div>
+        <h3>Ferramentas<br>Mir4</h3>
       </div>
     </div>
     <script>
-      function contato() {
-        alert("Discord - Fernand0#1585\nTelegram - @nand0coin");
-      }
-      function sobre() {
-        alert(
-          "Site Desenvolvido por Fernand0#1585. Com a ideia de facilitar a evolução dentro do Mir4. \n \n Versão 1.0"
-        )
-      }
-      function craft_equip() {
-        alert(
-          "Em Construção..."
-        )
+     function sobre(){
+      alert("Com Objetivo de Facilitar a Evolução no Mir4\n\nFeito por Fernando#1585\nVersão 1.1");
       }
     </script>
-    <footer>
-      <img src="images/inicio/mir4.png" alt="logo mir4" />
-      <span>© 2022 Mir4 Tools</span>
-      <div class="footer_links">
-        <a href="#">Inicio</a>
-        <a href="#" onclick="contato()">Contato</a>
-        <a href="paginas/donate.html">Apoie</a>
-        <a href="#" onclick="sobre()">Sobre</a>
+  </article>
+
+  <footer>
+    <nav class="navbar fixed-bottom bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand footer-text">
+          Copyright &copy; 2022 Mir4 Tools. Todos os Direitos Reservados - Criado por Nando
+        </a>
       </div>
-    </footer>
-  </body>
+    </nav>
+  </footer>
+</body>
+
 </html>

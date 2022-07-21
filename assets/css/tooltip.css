@@ -10,7 +10,7 @@
   background: #333;
 }
 
-.tooltip {
+.tooltip_equip {
   position: absolute;
   left: 36.5%;
   top: 27.5%;
@@ -25,12 +25,12 @@
   cursor: pointer;
 }
 
-.tooltip:hover {
+.tooltip_equip:hover {
   background: #86ff3b;
   box-shadow: 0 0 0 4px #333, 0 0 0 6px #86ff3b;
 }
 
-.tooltip .conteudo {
+.tooltip_equip .conteudo {
   position: absolute;
   top: 55px;
   width: 350px;
@@ -45,7 +45,7 @@
   transform: translateX(-50%) translateY(-50px);
 }
 
-.tooltip .conteudo .cobre {
+.tooltip_equip .conteudo .cobre {
   position: absolute;
   top: 43px;
   left: 25px;
@@ -53,7 +53,7 @@
   height: 85px;
 }
 
-.tooltip .conteudo .po {
+.tooltip_equip .conteudo .po {
   position: absolute;
   top: 158px;
   left: 32px;
@@ -61,27 +61,27 @@
   height: 80px;
 }
 
-.tooltip .conteudo p {
+.tooltip_equip .conteudo p {
   position: relative;
   font-size: 21px;
   margin-left: 90px;
   padding: 10px;
 }
 
-.tooltip .conteudo p {
+.tooltip_equip .conteudo p {
   position: relative;
   font-size: 21px;
   margin-left: 90px;
   padding: 10px;
 }
 
-.tooltip .conteudo h2 {
+.tooltip_equip .conteudo h2 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.tooltip .conteudo:before {
+.tooltip_equip .conteudo:before {
   content: "";
   position: absolute;
   top: -9px;
@@ -93,7 +93,7 @@
   transform: rotate(45deg);
 }
 
-.tooltip:hover .conteudo {
+.tooltip_equip:hover .conteudo {
   visibility: visible;
   opacity: 1;
   transform: translateX(-50%) translateY(0px);

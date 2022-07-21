@@ -2,20 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon/energia.png" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/energia.css" />
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <script src="assets/js/calculo.js"></script>
+    <link rel="stylesheet" href="/assets/css/tutorial.css" type="text/css" />
+    <link rel="stylesheet" href="../calculadora/assets/css/estilo.css">
+    <script src="/assets/js/tutorial.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-    <title>Calculo de Essencia</title>
+    <title>Tutoriais</title>
   </head>
   <body>
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
         <img src="../images/favicon/favicon.ico" width="50" height="50" alt="">
@@ -29,19 +28,19 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="darksteel.html">Aço Negro</a>
+              <a class="nav-link" href="../calculadora/darksteel.html">Aço Negro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="energia.html">Energia</a>
+              <a class="nav-link" href="../calculadora/energia.html">Energia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="xp.html">Experiência</a>
+              <a class="nav-link" href="../calculadora/xp.html">Experiência</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../paginas/equipamentos.html">Equipamentos</a>
+              <a class="nav-link" href="equipamentos.html">Equipamentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../paginas/tutorial.html">Tutoriais</a>
+              <a class="nav-link" href="tutorial.html">Tutoriais</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -51,32 +50,52 @@
       </div>
     </nav>
 
-    <article>
-      <div class="container">
-        <div class="energia">
-          <h2>Calculadora de Energia</h2>
-          <form class="calculo" method="POST">
-            <label>Em Quantos Segundos Você Recolhe?</label>
-            <br />
-            <input type="number" id="cadarecolha">
-            <br />
-            <label>Media de Energia Recolhida por Vez?</label>
-            <br />
-            <input type="number" id="revez">
-            <br />
-            <label>Tempo Restante em Minuto?</label>
-            <br />
-            <input type="number" id="tempores">
-            <br>
-          </form>
-          <br />
-          <button  onclick="essencia()" type="button" class="btn btn-primary btn-lg">Calcular</button>
-          <br />
-          <div id="resultado"></div>
+    <h1>Iniciante Level 40</h1>
+    <br />
+    <div class="movie">
+      <div class="prime"></div>
+      <div class="front">
+        <img
+          src="https://i.ytimg.com/vi/e9LDb41zLHs/maxresdefault.jpg"
+          alt=""
+          class="cover"
+        />
+      </div>
+
+      <div class="back">
+        <div class="trailer" id="player"></div>
+
+        <div class="title">
+          <h3>Guia Iniciante</h3>
+          <span></span>
+
+          <i class="fas fa-play ic-play"></i>
+          <i class="fas fa-plus ic-plus"></i>
+        </div>
+
+        <div class="description">
+          <p>
+            MIR4 - O começo perfeito! (Guia Completo de como rushar um novo servidor)
+
+            Salve rapaziada, fmza?
+            
+            Hoje vamos trocar uma idea sobre como iniciar bem em um novo servidor o/
+          </p>
+        </div>
+
+        <div class="time">
+          <p>36:45<span>2020</span></p>
+          <i class="far fa-comment-alt"></i>
         </div>
       </div>
 
-    </article>
+      <div class="background"></div>
+      
+      <script src="https://kit.fontawesome.com/134357056c.js"></script>
+      <script src="https://www.youtube.com/player_api"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </div>
+
     <footer>
       <nav class="navbar fixed-bottom bg-dark">
         <div class="container-fluid">
@@ -86,5 +105,6 @@
         </div>
       </nav>
     </footer>
+
   </body>
 </html>

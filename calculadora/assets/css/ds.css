@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: var(--fundoimg3);
+  background-image: var(--fundoimg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -16,15 +16,14 @@ body {
   --fundo: grey;
   --fundo2: #1a1a1a;
   --fundoimg: url("https://steamuserimages-a.akamaihd.net/ugc/1842536456297752183/3B5F5CDBF7CB08DD6557A627BA5E0B8B705B05E7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
-  --fundoimg2: url("/images/calculadora/mir4_2.jpeg");
-  --fundoimg3: url("/images/calculadora/fundo_ds.png");
+  --fundoimg2: url("/images/calculadora/fundo_ds.png");
   --font: "Mukta";
 }
 
 .container {
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: var(--texto);
 }
 
 .darksteel {
@@ -36,8 +35,8 @@ body {
   box-shadow: 3px 4px 10px #110239;
   background-color: #110239b7;
   width: 40%;
-  height: 650px;
-  margin-top: 150px;
+  height: 690px;
+  margin-top: 105px;
 }
 
 .darksteel > h2 {
@@ -74,25 +73,17 @@ label {
   color: white;
 }
 
-button {
-    font-size: 25px;
-    padding: 8px;
-    border-radius: 12px;
-    background-color: #3B3B3B;
-    color: white;
-}
-
 select {
   font-size: 17px;
 }
 
 #resultado {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: var(--texto);
 }
 
-.anuncio {
+/* .anuncio {
   position: absolute;
   top: 260px;
   left: 60px;
@@ -105,7 +96,7 @@ select {
   width: 100%
 }
 
-/* .anuncio h1 {
+.anuncio h1 {
   font-size: 35px;
   color: white;
   text-align: center;

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: var(--fundoimg4);
+  background-image: var(--fundoimg2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: var(--texto);
 }
 
 .energia {
@@ -38,8 +38,8 @@ body {
   box-shadow: 3px 4px 10px #0d6368;
   background-color: #0d6368a2;
   width: 40%;
-  height: 650px;
-  margin-top: 150px;
+  height: 720px;
+  margin-top: 95px;
 }
 
 .energia > h2 {
@@ -71,14 +71,6 @@ body {
   border: 1px solid #18422a;
 }
 
-button {
-    font-size: 25px;
-    padding: 8px;
-    border-radius: 12px;
-    background-color: #3B3B3B;
-    color: white;
-}
-
 label {
   font-size: 17px;
   font-family: Arial, sans-serif;
@@ -89,6 +81,7 @@ label {
   text-align: center;
   color: var(--texto);
 }
+
 
 /* RESPONSIVIDADE */
 

@@ -11,7 +11,7 @@
     font-family: sans-serif;
     place-items: center;
     display: grid;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-dark)!important;
     color: #fff;
     min-height: 100vh;
   }
