@@ -34,7 +34,7 @@ body {
   border-radius: 15px;
   box-shadow: 3px 4px 10px #110239;
   background-color: #110239b7;
-  width: 40%;
+  width: 45%;
   height: 690px;
   margin-top: 105px;
 }
@@ -69,7 +69,8 @@ body {
 }
 
 label {
-  font-size: 20px;
+  font-size: 17px;
+  font-family: Arial, sans-serif;
   color: white;
 }
 
@@ -82,26 +83,6 @@ select {
   text-align: center;
   color: var(--texto);
 }
-
-/* .anuncio {
-  position: absolute;
-  top: 260px;
-  left: 60px;
-  width: 350px;
-  height: 480px;
-  background-color: chocolate;
-}
-
-.anuncio img {
-  width: 100%
-}
-
-.anuncio h1 {
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  margin-top: 60px;
-} */
 
 /* RESPONSIVIDADE */
 
@@ -129,22 +110,15 @@ select {
     background-color: #0000009d;
     width: 420px;
     height: 700px;
-  }
-  .anuncio {
-    position: absolute;
-    top: 9px;
-    left: 5px;
-    width: 350px;
-    height: 90px;
-    background-color: chocolate;
-  }
+   }
+ }
 }
 
 /* Tablet */
 @media screen {
   @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/images/mobile/mobile_maga.jpg);
+      background-image: url(/images/mobile/tablet.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -163,53 +137,6 @@ select {
       background-color: #0000009d;
       width: 60%;
       height: 700px;
-    }
-    .anuncio {
-      position: absolute;
-      top: 9px;
-      left: 152px;
-      width: 550px;
-      height: 100px;
-      background-color: chocolate;
-    }
-  }
-}
-}
-
-/* Desktop 1 */
-
-@media screen {
-  @media (min-width: 1000px) and (max-width: 1370px) {
-    .anuncio {
-      position: absolute;
-      top: 9px;
-      left: 388px;
-      width: 570px;
-      height: 100px;
-      background-color: chocolate;
-    }
-  }
-}
-
-/* Desktop 2 */
-@media screen {
-  @media (min-width: 1366px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
-
-/* * Desktop 3 */
-
-@media screen {
-  @media (min-width: 1920px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
     }
   }
 }

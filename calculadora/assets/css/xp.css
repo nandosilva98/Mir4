@@ -74,10 +74,6 @@ body {
   border: 1px solid #18422a;
 }
 
-select {
-  font-size: 17px;
-}
-
 #resultado {
   font-size: 18px;
   text-align: center;
@@ -116,14 +112,15 @@ select {
     background-color: #0000009d;
     width: 420px;
     height: 700px;
-  }
+   }
+ }
 }
 
 /* Tablet */
 @media screen {
   @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/images/mobile/mobile_maga.jpg);
+      background-image: url(/images/mobile/tablet.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -132,41 +129,4 @@ select {
       height: 700px;
     }
   }
-}
-
-/* Desktop 1 */
-
-@media screen {
-  @media (min-width: 1025px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
-
-/* Desktop 2 */
-@media screen {
-  @media (min-width: 1366px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
-
-/* * Desktop 3 */
-
-@media screen {
-  @media (min-width: 1920px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
-
 }

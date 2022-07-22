@@ -82,7 +82,6 @@ label {
   color: var(--texto);
 }
 
-
 /* RESPONSIVIDADE */
 
 /* Mobile */
@@ -116,7 +115,7 @@ label {
 @media screen {
   @media (min-width: 581px) and (max-width: 1000px) {
     body {
-      background-image: url(/images/mobile/mobile_maga.jpg);
+      background-image: url(/images/mobile/tablet.jpg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -133,37 +132,4 @@ label {
   }
 }
 
-/* Desktop 1 */
-
-@media screen {
-  @media (min-width: 1280px) and (max-width: 1370px) {
-    .energia {
-      display: flex;
-      margin-top: -30px;
-    }
-  }
-}
-
-/* Desktop 2 */
-@media screen {
-  @media (min-width: 1366px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
-
-/* * Desktop 3 */
-
-@media screen {
-  @media (min-width: 1920px) {
-    body {
-      /* background-image: url(/assets/images/desktop.jpg);
-      background-repeat: no-repeat;
-      background-size: cover; */
-    }
-  }
-}
 }

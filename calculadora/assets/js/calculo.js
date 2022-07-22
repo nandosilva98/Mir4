@@ -14,22 +14,22 @@ function aco_negro() {
 	let n2 = Number(dsporvez.value);
 	let n3 = Number(tempo);
 
-	let calculo1 = (n1 * n2);
+	let calculo1 = Number(n1 * n2);
 	let n4 = Number(calculo1);
 
-	let tempocalc = (tempo / n1);
+	let tempocalc = Number(tempo / n1);
 	let n5 = Number(tempocalc);
 
-	let calculo2 = (n5 * n2);
+	let calculo2 = Number(n5 * n2);
 	let n6 = Number(calculo2);
 
-	let n7 = (calculo2 * tempo);
-	let n8 = (n7 * meio_dia);
-	let n9 = (n7 * dia);
+	let n7 = Number(calculo2 * tempo);
+	let n8 = Number(n7 * meio_dia);
+	let n9 = Number(n7 * dia);
 
 	let tempor = window.document.getElementById("tempores");
 	let n10 = Number(tempor.value);
-	let n11 = (n6 * n10);
+	let n11 = Number(n6 * n10);
 	
 	resultado.innerHTML = '';
 
@@ -114,8 +114,8 @@ function exp() {
     let n4 = Number(umporcemporcem);
     
     
-    quantofalta = (n3 - n4);
-    n5 = Number(quantofalta);
+    let quantofalta = (n3 - n4);
+    let n5 = Number(quantofalta);
 
     resultado.innerHTML += `Total do Level Atual <strong>${n3}</strong> de Experiência` + '<br>';
 	resultado.innerHTML += `Faltam <strong>${n5}</strong> de Experiência` + '<br>';
