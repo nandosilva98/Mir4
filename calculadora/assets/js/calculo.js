@@ -103,7 +103,7 @@ function essencia() {
 
 function exp() {
 
-    let resultado = window.document.querySelector("#resultado");
+    let resultado = window.document.querySelector("#resultadoxp");
 
     let cinco = window.document.getElementById("5porcem");
     let atual = window.document.querySelector("input#porcematual");

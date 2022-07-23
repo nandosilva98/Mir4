@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon/exp.png" type="image/png" />
-    <link rel="stylesheet" href="assets/css/xp.css" />
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <script src="assets/js/calculo.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/xp.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/js/calculo.js"></script>
     <title>Calculadora de EXP</title>
   </head>
+
   <body>
-    
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
         <img src="../images/favicon/favicon.ico" width="50" height="50" alt="">
@@ -49,8 +49,8 @@
     </nav>
     <article>
       
-      <div class="container">
-        <div class="xp">
+      <div class="container container_xp">
+        <div class="conteudo xp">
           <h2>Calculadora de XP</h2>
           <form class="calculo" method="POST">
             <label>Seus 5% de XP?</label>
@@ -67,9 +67,9 @@
           <button  onclick="exp()" type="button" class="btn btn-primary btn-lg">Calcular</button>
           <br />
           <br />
-          <div id="resultado"></div>
+          <div id="resultadoxp"></div>
         </div>
-        <div class="xp">
+        <div class="conteudo xp">
           <h2>Calculadora de Farm</h2>
           <form class="calculo" method="POST">
             <label>XP Necessario para Upar de Level?</label>
@@ -98,10 +98,10 @@
     </article>
 
     <footer>
-      <nav class="navbar fixed-bottom bg-dark">
+      <nav class="navbar fixed-bottom bg-dark xpnav">
         <div class="container-fluid">
           <a class="navbar-brand footer-text">
-            Copyright &copy; 2022 Mir4 Tools. Todos os Direitos Reservados - Criado por Nando
+            <span> Copyright &copy; 2022 Mir4 Tools<span class="copy">. Todos os Direitos Reservados</span> - Criado por Nando </span>
           </a>
         </div>
       </nav>
