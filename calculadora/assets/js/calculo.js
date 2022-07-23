@@ -12,7 +12,6 @@ function aco_negro() {
 
 	let n1 = Number(minerada.value);
 	let n2 = Number(dsporvez.value);
-	let n3 = Number(tempo);
 
 	let calculo1 = Number(n1 * n2);
 	let n4 = Number(calculo1);
@@ -30,17 +29,24 @@ function aco_negro() {
 	let tempor = window.document.getElementById("tempores");
 	let n10 = Number(tempor.value);
 	let n11 = Number(n6 * n10);
+    
+	// Pontuação
+	let res1 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
+    let res2 = calculo2.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = n7.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = n8.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res5 = n9.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	
 	resultado.innerHTML = '';
-
 	resultado.innerHTML += '<br>';
 
-	resultado.innerHTML += `Seu Farm Restante - ${n11} Dark Steel` + '<br>';
+	resultado.innerHTML += `Seu Farm Restante - ${res1} Dark Steel` + '<br>';
 	resultado.innerHTML += '<br>';
-	resultado.innerHTML += `1 Minuto - ${calculo2} Dark Steel` + '<br>';
-	resultado.innerHTML += `1 Hora - ${n7} Dark Steel` + '<br>';
-	resultado.innerHTML += `12 Horas - ${n8} Dark Steel` + '<br>';
-	resultado.innerHTML += `24 Horas - ${n9} Dark Steel` + '<br>';
+	resultado.innerHTML += `1 Minuto - ${res2} Dark Steel` + '<br>';
+	resultado.innerHTML += `1 Hora - ${res3} Dark Steel` + '<br>';
+	resultado.innerHTML += `12 Horas - ${res4} Dark Steel` + '<br>';
+	resultado.innerHTML += `24 Horas - ${res5} Dark Steel` + '<br>';
+
 }
 
 // ENERGIA
@@ -57,7 +63,6 @@ function essencia() {
 
 	let n1 = Number(recolha.value);
 	let n2 = Number(energiaporvez.value);
-	let n3 = Number(tempo);
 
 	let calculo1 = (n1 * n2);
 	let n4 = Number(calculo1);
@@ -75,17 +80,23 @@ function essencia() {
 	let tempor = window.document.getElementById("tempores");
 	let n10 = Number(tempor.value);
 	let n11 = (n6 * n10);
+
+	// Pontuação
+	let res1 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res2 = calculo2.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = n7.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = n8.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res5 = n9.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	
 	resultado.innerHTML = '';
-
 	resultado.innerHTML += '<br>';
     
-	resultado.innerHTML += `Seu Farm Restante - ${n11} de Energia` + '<br>';
+	resultado.innerHTML += `Seu Farm Restante - ${res1} de Energia` + '<br>';
 	resultado.innerHTML += '<br>';
-	resultado.innerHTML += `1 Minuto - ${calculo2} de Energia` + '<br>';
-	resultado.innerHTML += `1 Hora - ${n7} de Energia` + '<br>';
-	resultado.innerHTML += `12 Horas - ${n8} de Energia` + '<br>';
-	resultado.innerHTML += `24 Horas - ${n9} de Energia` + '<br>';
+	resultado.innerHTML += `1 Minuto - ${res2} de Energia` + '<br>';
+	resultado.innerHTML += `1 Hora - ${res3} de Energia` + '<br>';
+	resultado.innerHTML += `12 Horas - ${res4} de Energia` + '<br>';
+	resultado.innerHTML += `24 Horas - ${res5} de Energia` + '<br>';
 }
 
 // EXP
@@ -117,8 +128,14 @@ function exp() {
     let quantofalta = (n3 - n4);
     let n5 = Number(quantofalta);
 
-    resultado.innerHTML += `Total do Level Atual <strong>${n3}</strong> de Experiência` + '<br>';
-	resultado.innerHTML += `Faltam <strong>${n5}</strong> de Experiência` + '<br>';
+	// Pontuação
+	let res1 = n3.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res2 = n5.toLocaleString('pt-br', {maximumFractionDigits: 0});
+
+	resultado.innerHTML = '';
+
+    resultado.innerHTML += `Total do Level Atual <strong>${res1}</strong> de Experiência` + '<br>';
+	resultado.innerHTML += `Faltam <strong>${res2}</strong> de Experiência` + '<br>';
 
 }
 
@@ -154,15 +171,19 @@ function exp2() {
 	let n14 = Number(tempo_de_farm.value);
 	let n15 = (n11 * n14);
 
-     // Resultado Farm
+	// Pontuação
+	let res1 = n15.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res2 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = n12.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = n13.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	
 
-     resultado.innerHTML = '';
-     resultado.innerHTML = '';
-     resultado.innerHTML += '<br>';
+     resultado2.innerHTML = '';
+	 resultado2.innerHTML += '<br>';
 
-     resultado2.innerHTML += `Nessa Tempo Você Vai Receber <strong>${n15}</strong> de Experiência` + '<br>';
-     resultado2.innerHTML += `Você Recebe <strong>${n11}</strong> de Experiência Por Minuto` + '<br>';
-     resultado2.innerHTML += `Você Recebe <strong>${n12}</strong> de Experiência Por Hora` + '<br>';
-     resultado2.innerHTML += `Nessa Taxa de XP Você Upa em <strong>${n13}</strong> Horas` + '<br>';
+     resultado2.innerHTML += `Nessa Tempo Você Vai Receber <strong>${res1}</strong> de Experiência` + '<br>';
+     resultado2.innerHTML += `Você Recebe <strong>${res2}</strong> de Experiência Por Minuto` + '<br>';
+     resultado2.innerHTML += `Você Recebe <strong>${res3}</strong> de Experiência Por Hora` + '<br>';
+     resultado2.innerHTML += `Nessa Taxa de XP Você Upa em <strong>${res4}</strong> Horas` + '<br>';
 }
 
