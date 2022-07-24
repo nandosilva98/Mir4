@@ -12,6 +12,7 @@
 }
 
 body {
+  background-color: grey;
   background-image: url(../../images/inicio/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
