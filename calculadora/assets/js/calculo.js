@@ -2,10 +2,9 @@
 
 function aco_negro() {
 
-	let resultado = window.document.querySelector("#resultado");
-
-	let minerada = window.document.getElementById("cadaminerada");
-	let dsporvez = window.document.querySelector("input#dsvez");
+	let resultado = document.querySelector("#resultado");
+	let minerada = document.querySelector("#cadaminerada");
+	let dsporvez = document.querySelector("#dsvez");
 	let tempo = 60;
 	let meio_dia = 12;
 	let dia = 24;
@@ -26,7 +25,7 @@ function aco_negro() {
 	let n8 = Number(n7 * meio_dia);
 	let n9 = Number(n7 * dia);
 
-	let tempor = window.document.getElementById("tempores");
+	let tempor = document.querySelector("#tempores");
 	let n10 = Number(tempor.value);
 	let n11 = Number(n6 * n10);
     
@@ -53,10 +52,9 @@ function aco_negro() {
 
 function essencia() {
 
-	let resultado = window.document.querySelector("#resultado");
-
-	let recolha = window.document.getElementById("cadarecolha");
-	let energiaporvez = window.document.querySelector("input#revez");
+	let resultado = document.querySelector("#resultado");
+	let recolha = document.querySelector("#cadarecolha");
+	let energiaporvez = document.querySelector("#revez");
 	let tempo = 60;
 	let meio_dia = 12;
 	let dia = 24;
@@ -77,7 +75,7 @@ function essencia() {
 	let n8 = (n7 * meio_dia);
 	let n9 = (n7 * dia);
 
-	let tempor = window.document.getElementById("tempores");
+	let tempor = document.querySelector("#tempores");
 	let n10 = Number(tempor.value);
 	let n11 = (n6 * n10);
 
@@ -103,10 +101,10 @@ function essencia() {
 
 function exp() {
 
-    let resultado = window.document.querySelector("#resultadoxp");
+    let resultado = document.querySelector("#resultadoxp");
 
-    let cinco = window.document.getElementById("5porcem");
-    let atual = window.document.querySelector("input#porcematual");
+    let cinco = document.getElementById("5porcem");
+    let atual = document.querySelector("#porcematual");
 
     let n0 = Number(atual.value);
     let n1 = Number(cinco.value);
@@ -141,15 +139,15 @@ function exp() {
 
 function exp2() {
     
-    let resultado2 = window.document.querySelector("#resultadofarm");
+    let resultado2 = document.querySelector("#resultadofarm");
     
-    let xp_res = window.document.getElementById("restante");
+    let xp_res = document.querySelector("#restante");
     let n6 = Number(xp_res.value);
 
-    let monstro = window.document.getElementById("xpmob");
+    let monstro = document.querySelector("#xpmob");
     let n7 = Number(monstro.value);
 
-    let segundos = window.document.getElementById("segmob");
+    let segundos = document.querySelector("#segmob");
     let n8 = Number(segundos.value);
 
     let mobsfaltam = (n6 / n7);
@@ -167,7 +165,7 @@ function exp2() {
     let horas_totais_up = (n6 / n12);
     let n13 = Number(horas_totais_up);
 
-    let tempo_de_farm = window.document.getElementById("tempofarmxp");
+    let tempo_de_farm = document.querySelector("#tempofarmxp");
 	let n14 = Number(tempo_de_farm.value);
 	let n15 = (n11 * n14);
 
