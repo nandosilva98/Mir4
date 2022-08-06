@@ -5,4 +5,4 @@
 3. Calculadora de Energia
 4. Calculadora de EXP
 
-Ver~sao 1.1
+Versão 1.1
