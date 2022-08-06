@@ -1,2 +1,8 @@
 # Mir4
-Informações sobre o mir4
+
+1. Informações dos Equipamentos
+2. Calculadora Dark Steel
+3. Calculadora de Energia
+4. Calculadora de EXP
+
+Ver~sao 1.1
