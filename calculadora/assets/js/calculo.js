@@ -3,39 +3,29 @@
 function aco_negro() {
 
 	let resultado = document.querySelector("#resultado");
-	let minerada = document.querySelector("#cadaminerada");
+	let miner = document.querySelector("#cadaminerada");
 	let dsporvez = document.querySelector("#dsvez");
-	let tempo = 60;
-	let meio_dia = 12;
-	let dia = 24;
 
-	let n1 = Number(minerada.value);
-	let n2 = Number(dsporvez.value);
+	minerada = Number(miner.value);
+	let dsporMinerada = Number(dsporvez.value);
 
-	let calculo1 = Number(n1 * n2);
-	let n4 = Number(calculo1);
+	let tempoMinerada = Number(60 / minerada);
+	let calculo = Number(tempoMinerada * dsporMinerada);
 
-	let tempocalc = Number(tempo / n1);
-	let n5 = Number(tempocalc);
-
-	let calculo2 = Number(n5 * n2);
-	let n6 = Number(calculo2);
-
-	let n7 = Number(calculo2 * tempo);
-	let n8 = Number(n7 * meio_dia);
-	let n9 = Number(n7 * dia);
+	let tempo = Number(calculo * 60);
+	let meioDia = Number(tempo * 12);
+	let dia = Number(tempo * 24);
 
 	let tempor = document.querySelector("#tempores");
-	let n10 = Number(tempor.value);
-	let n11 = Number(n6 * n10);
-    
-	// Pontuação
-	let res1 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
-    let res2 = calculo2.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res3 = n7.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res4 = n8.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res5 = n9.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let tempoRestante = Number(calculo * tempor.value);
 	
+	// Pontuação
+	let res1 = tempoRestante.toLocaleString('pt-br', {maximumFractionDigits: 0});
+    let res2 = calculo.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = tempo.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = meioDia.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res5 = dia.toLocaleString('pt-br', {maximumFractionDigits: 0});
+
 	resultado.innerHTML = '';
 	resultado.innerHTML += '<br>';
 
@@ -55,36 +45,25 @@ function essencia() {
 	let resultado = document.querySelector("#resultado");
 	let recolha = document.querySelector("#cadarecolha");
 	let energiaporvez = document.querySelector("#revez");
-	let tempo = 60;
-	let meio_dia = 12;
-	let dia = 24;
 
-	let n1 = Number(recolha.value);
-	let n2 = Number(energiaporvez.value);
+	let recolhida = Number(recolha.value);
+	let energiaVez = Number(energiaporvez.value);
 
-	let calculo1 = (n1 * n2);
-	let n4 = Number(calculo1);
-
-	let tempocalc = (tempo / n1);
-	let n5 = Number(tempocalc);
-
-	let calculo2 = (n5 * n2);
-	let n6 = Number(calculo2);
-
-	let n7 = (calculo2 * tempo);
-	let n8 = (n7 * meio_dia);
-	let n9 = (n7 * dia);
+	let tempoRecolhida = Number(60 / recolhida);
+	let calculo = Number(tempoRecolhida * energiaVez);
+	let tempo = Number(calculo * 60);
+	let meioDia = Number(tempo * 12);
+	let dia = Number(tempo * 24);
 
 	let tempor = document.querySelector("#tempores");
-	let n10 = Number(tempor.value);
-	let n11 = (n6 * n10);
+	let tempoRestante = Number(calculo * tempor.value);
 
 	// Pontuação
-	let res1 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res2 = calculo2.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res3 = n7.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res4 = n8.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res5 = n9.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res1 = tempoRestante.toLocaleString('pt-br', {maximumFractionDigits: 0});
+    let res2 = calculo.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = tempo.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = meioDia.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res5 = dia.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	
 	resultado.innerHTML = '';
 	resultado.innerHTML += '<br>';
@@ -106,29 +85,17 @@ function exp() {
     let cinco = document.getElementById("5porcem");
     let atual = document.querySelector("#porcematual");
 
-    let n0 = Number(atual.value);
-    let n1 = Number(cinco.value);
+    levelAtual = Number(atual.value);
+    cincoPorcento = Number(cinco.value);
 
-    let cinco2 = 5;
-    let cem = 100;
-
-    let divisaocincoporcemporum = (n1 / cinco2);
-    let n2 = Number(divisaocincoporcemporum)
-
-    let cemporcem = (n2 * cem);
-    let n3 = Number(cemporcem);
-
-   
-    let umporcemporcem = (n0 * n2);
-    let n4 = Number(umporcemporcem);
-    
-    
-    let quantofalta = (n3 - n4);
-    let n5 = Number(quantofalta);
+    let divcincoPorcem = (cincoPorcento / 5);
+    let cemPorcem = (divcincoPorcem * 100);
+    let umPorcem = (levelAtual * divcincoPorcem);
+    let quantofalta = (cemPorcem - umPorcem);
 
 	// Pontuação
-	let res1 = n3.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res2 = n5.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res1 = cemPorcem.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res2 = quantofalta.toLocaleString('pt-br', {maximumFractionDigits: 0});
 
 	resultado.innerHTML = '';
 
@@ -142,38 +109,26 @@ function exp2() {
     let resultado2 = document.querySelector("#resultadofarm");
     
     let xp_res = document.querySelector("#restante");
-    let n6 = Number(xp_res.value);
-
     let monstro = document.querySelector("#xpmob");
-    let n7 = Number(monstro.value);
-
     let segundos = document.querySelector("#segmob");
-    let n8 = Number(segundos.value);
 
-    let mobsfaltam = (n6 / n7);
-    let n9 = Number(mobsfaltam);
+	xp = Number(xp_res.value);
+	mob = Number(monstro.value);
+    seg = Number(segundos.value);
 
-    let mob_por_minuto = (60 / n8);
-    let n10 = Number(mob_por_minuto);
-
-    let xp_por_minuto = (n10 * n7);
-    let n11 = Number(xp_por_minuto);
-
-    let xp_por_hora = (n11 * 60);
-    let n12 = Number(xp_por_hora);
-
-    let horas_totais_up = (n6 / n12);
-    let n13 = Number(horas_totais_up);
+    let mob_por_minuto = (60 / seg);
+    let xp_por_minuto = (mob_por_minuto * mob);
+    let xp_por_hora = (xp_por_minuto * 60);
+    let horas_totais_up = (xp / xp_por_hora);
 
     let tempo_de_farm = document.querySelector("#tempofarmxp");
-	let n14 = Number(tempo_de_farm.value);
-	let n15 = (n11 * n14);
+	let tempoFarmTotal = (xp_por_minuto * tempo_de_farm.value);
 
 	// Pontuação
-	let res1 = n15.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res2 = n11.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res3 = n12.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res4 = n13.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res1 = tempoFarmTotal.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res2 = xp_por_minuto.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res3 = xp_por_hora.toLocaleString('pt-br', {maximumFractionDigits: 0});
+	let res4 = horas_totais_up.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	
 
      resultado2.innerHTML = '';
