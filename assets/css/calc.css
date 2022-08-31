@@ -1,0 +1,53 @@
+body {
+    background-color: chocolate;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    height: 70%;
+    background-color: rgb(97, 97, 97);
+}
+
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornflowerblue;
+    width: 69%;
+}
+
+
+input, span {
+    margin-top: 14px;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+    width: 30%;
+    padding-left: 15px;
+}
+
+#res {
+    font-size: 20px;
+}

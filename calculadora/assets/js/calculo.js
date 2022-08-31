@@ -26,6 +26,22 @@ function aco_negro() {
 	let res4 = meioDia.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	let res5 = dia.toLocaleString('pt-br', {maximumFractionDigits: 0});
 
+	if (res1 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res2 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res3 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res4 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res5 < 0) {
+		res1 = res1 * -1;
+	}
+
 	resultado.innerHTML = '';
 	resultado.innerHTML += '<br>';
 
@@ -57,6 +73,22 @@ function essencia() {
 
 	let tempor = document.querySelector("#tempores");
 	let tempoRestante = Number(calculo * tempor.value);
+
+	if (res1 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res2 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res3 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res4 < 0) {
+		res1 = res1 * -1;
+	}
+	if (res5 < 0) {
+		res1 = res1 * -1;
+	}
 
 	// Pontuação
 	let res1 = tempoRestante.toLocaleString('pt-br', {maximumFractionDigits: 0});
