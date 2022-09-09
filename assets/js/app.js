@@ -6,6 +6,15 @@ let input_1 = document.querySelector('#item1');
 let input_2 = document.querySelector('#item2');
 let input_3 = document.querySelector('#item3');
 
+
+// Fazer um array
+
+function items(item1, item2, item3) {
+    this.item1 = item1;
+    this.item2 = item2;
+    this.item3 = item3;
+}
+
 input_a = Number(input_1.value);
 input_b = Number(input_2.value);
 input_c = Number(input_3.value);
