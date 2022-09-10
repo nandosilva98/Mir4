@@ -28,15 +28,3 @@ Farm Restante = var3
 1 Minuto - var2
 1 Hora - var2 * 60
 <i>
-<!-- <br>
-2. Calculadora de Energia
-![energia](/images/markdown/energia_md.png)
-<br>
-3. Calculadora de EXP
-![exp](/images/markdown/xp_md.png)
-<br>
-4. Calculadora de Farm
-![farm_exp](/images/markdown/farm_md.png) 
-<br>
-5. Informações dos Equipamentos 
-![equipamentos](/images/markdown/info.png) -->
