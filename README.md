@@ -6,7 +6,7 @@
 1. Calculadora Dark Steel <br> <br>
 ![aconegro](/images/markdown/aconegro_md.png) 
 <br>
-<b>Input Exemplo</b> <br>
+<b>2. Input Exemplo</b> <br>
 Em quantos segundos você minera? <br>
 R. 8 Segundos <br>
 Media de dark steel minerado por vez? <br>
@@ -19,7 +19,7 @@ Seu Farm Restante - 54.000 Dark Steel = A Minerar <br>
 <br> 
 <br>
 <i>
-<b>Calculo Dark Steel</b> <br>
+<b>3. Calculo Dark Steel</b> <br>
 input -> minerada, dsporMinerada, temporestante = X, Y, Z <br>
 var1 = 60 / X <br>
 var2 = var1 * Y <br>
