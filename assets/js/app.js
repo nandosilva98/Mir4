@@ -11,7 +11,6 @@ let input_3 = document.querySelector('#item3');
 
 const raro = ["100", "25", "25"];
 
-
 input_a = Number(input_1.value);
 input_b = Number(input_2.value);
 input_c = Number(input_3.value);

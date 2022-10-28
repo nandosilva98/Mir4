@@ -18,14 +18,15 @@ function aco_negro() {
 
 	let tempor = document.querySelector("#tempores");
 	let tempoRestante = Number(calculo * tempor.value);
-	
+
 	// Pontuação
 	let res1 = tempoRestante.toLocaleString('pt-br', {maximumFractionDigits: 0});
     let res2 = calculo.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	let res3 = tempo.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	let res4 = meioDia.toLocaleString('pt-br', {maximumFractionDigits: 0});
 	let res5 = dia.toLocaleString('pt-br', {maximumFractionDigits: 0});
-
+    
+	// Remove numeros negativos do calculo
 	if (res1 < 0) {
 		res1 = res1 * -1;
 	}
