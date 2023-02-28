@@ -2,57 +2,44 @@
 
 function aco_negro() {
 
-	let resultado = document.querySelector("#resultado");
-	let miner = document.querySelector("#cadaminerada");
-	let dsporvez = document.querySelector("#dsvez");
-
-	minerada = Number(miner.value);
-	let dsporMinerada = Number(dsporvez.value);
-
-	let tempoMinerada = Number(60 / minerada);
-	let calculo = Number(tempoMinerada * dsporMinerada);
-
-	let tempo = Number(calculo * 60);
-	let meioDia = Number(tempo * 12);
-	let dia = Number(tempo * 24);
-
-	let tempor = document.querySelector("#tempores");
-	let tempoRestante = Number(calculo * tempor.value);
-
-	// Pontuação
-	let res1 = tempoRestante.toLocaleString('pt-br', {maximumFractionDigits: 0});
-    let res2 = calculo.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res3 = tempo.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res4 = meioDia.toLocaleString('pt-br', {maximumFractionDigits: 0});
-	let res5 = dia.toLocaleString('pt-br', {maximumFractionDigits: 0});
+    const miner = document.querySelector("#cadaminerada");
+    const dsporvez = document.querySelector("#dsvez");
+    const tempor = document.querySelector("#tempores");
     
-	// Remove numeros negativos do calculo
-	if (res1 < 0) {
-		res1 = res1 * -1;
-	}
-	if (res2 < 0) {
-		res1 = res1 * -1;
-	}
-	if (res3 < 0) {
-		res1 = res1 * -1;
-	}
-	if (res4 < 0) {
-		res1 = res1 * -1;
-	}
-	if (res5 < 0) {
-		res1 = res1 * -1;
-	}
+    const minerada = Number(miner.value);
+    const dsporMinerada = Number(dsporvez.value);
+    const tempoRestante = Number(calculo * tempor.value);
+    
+    const tempoMinerada = 60 / minerada;
+    const calculo = tempoMinerada * dsporMinerada;
+    const tempo = calculo * 60;
+    const meioDia = tempo * 12;
+    const dia = tempo * 24;
 
-	resultado.innerHTML = '';
-	resultado.innerHTML += '<br>';
+    // Pontuação
+    const options = { maximumFractionDigits: 0 };
 
-	resultado.innerHTML += `Seu Farm Restante - ${res1} Dark Steel` + '<br>';
-	resultado.innerHTML += '<br>';
-	resultado.innerHTML += `1 Minuto - ${res2} Dark Steel` + '<br>';
-	resultado.innerHTML += `1 Hora - ${res3} Dark Steel` + '<br>';
-	resultado.innerHTML += `12 Horas - ${res4} Dark Steel` + '<br>';
-	resultado.innerHTML += `24 Horas - ${res5} Dark Steel` + '<br>';
+    let restante = tempoRestante.toLocaleString('pt-br', options);
+    let minuto = calculo.toLocaleString('pt-br', options);
+    let hora = tempo.toLocaleString('pt-br', options);
+    let dozehoras = meioDia.toLocaleString('pt-br', options);
+    let umdia = dia.toLocaleString('pt-br', options);
 
+    // Remove numeros negativos do calculo
+    [restante, minuto, hora, dozehoras, umdia].forEach((res, index) => {
+        if (res < 0) {
+            res[index] *= -1;
+        }
+    });
+
+    const resultado = document.querySelector('#resultado');
+    resultado.innerHTML = `
+      <br>Seu Farm Restante - ${restante} Dark Steel<br><br>
+      1 Minuto - ${minuto} Dark Steel<br>
+      1 Hora - ${hora} Dark Steel<br>
+      12 Horas - ${dozehoras} Dark Steel<br>
+      24 Horas - ${umdia} Dark Steel<br>
+    `;
 }
 
 // ENERGIA
