@@ -10,13 +10,14 @@ function aco_negro() {
 
     const minerada = Number(miner.value);
     const dsporMinerada = Number(dsporvez.value);
-    const tempoRestante = Number(calculo * tempor.value);
 
     const tempoMinerada = 60 / minerada;
     const calculo = tempoMinerada * dsporMinerada;
     const tempo = calculo * 60;
     const meioDia = tempo * 12;
     const dia = tempo * 24;
+
+    const tempoRestante = Number(calculo * tempor.value);
 
     let restante = pontuacao(tempoRestante)
     let minuto = pontuacao(calculo)
