@@ -113,7 +113,7 @@ function exp2() {
     const tempo_de_farm = document.querySelector("#tempofarmxp");
     const tempoFarmTotal = (xp_por_minuto * tempo_de_farm.value);
 
-    const resultado2 = document.querySelector('#resultado2');
+    const resultado2 = document.querySelector('#resultadofarm');
 
     let res1 = pontuacao(tempoFarmTotal)
     let res2 = pontuacao(xp_por_minuto)
