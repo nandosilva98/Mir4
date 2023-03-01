@@ -1,4 +1,6 @@
-const pontuacao = { maximumFractionDigits: 0 };
+function pontuacao(number) {
+    return number.toLocaleString('pt-br', { maximumFractionDigits: 0 });
+}
 
 function aco_negro() {
 
@@ -16,11 +18,11 @@ function aco_negro() {
     const meioDia = tempo * 12;
     const dia = tempo * 24;
 
-    let restante = tempoRestante.toLocaleString('pt-br', pontuacao);
-    let minuto = calculo.toLocaleString('pt-br', pontuacao);
-    let hora = tempo.toLocaleString('pt-br', pontuacao);
-    let dozehoras = meioDia.toLocaleString('pt-br', pontuacao);
-    let umdia = dia.toLocaleString('pt-br', pontuacao);
+    let restante = pontuacao(tempoRestante)
+    let minuto = pontuacao(calculo)
+    let hora = pontuacao(tempo)
+    let dozehoras = pontuacao(meioDia)
+    let umdia = pontuacao(dia)
 
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = `
@@ -52,12 +54,11 @@ function essencia() {
     const tempor = document.querySelector("#tempores");
     const tempoRestante = Number(calculo * tempor.value);
 
-    // codigo repitido achar uma solução 
-    let restante = tempoRestante.toLocaleString('pt-br', pontuacao);
-    let minuto = calculo.toLocaleString('pt-br', pontuacao);
-    let hora = tempo.toLocaleString('pt-br', pontuacao);
-    let dozehoras = meioDia.toLocaleString('pt-br', pontuacao);
-    let umdia = dia.toLocaleString('pt-br', pontuacao);
+    let restante = pontuacao(tempoRestante)
+    let minuto = pontuacao(calculo)
+    let hora = pontuacao(tempo)
+    let dozehoras = pontuacao(meioDia)
+    let umdia = pontuacao(dia)
 
     resultado.innerHTML = `
     Seu Farm Restante - ${restante} de Energia<br><br>
@@ -85,8 +86,8 @@ function exp() {
 
     const resultado = document.querySelector("#resultadoxp");
 
-    let res1 = cemPorcem.toLocaleString('pt-br', pontuacao);
-    let res2 = quantofalta.toLocaleString('pt-br', pontuacao);
+    let res1 = pontuacao(cemPorcem)
+    let res2 = pontuacao(quantofalta)
 
     resultado.innerHTML = `Total do Level Atual <strong>${res1}</strong> de Experiência<br>
     Faltam <strong>${res2}</strong> de Experiência`;
@@ -112,10 +113,10 @@ function exp2() {
 
     const resultado2 = document.querySelector('#resultado2');
 
-    let res1 = tempoFarmTotal.toLocaleString('pt-br', pontuacao);
-    let res2 = xp_por_minuto.toLocaleString('pt-br', pontuacao);
-    let res3 = xp_por_hora.toLocaleString('pt-br', pontuacao);
-    let res4 = horas_totais_up.toLocaleString('pt-br', pontuacao);
+    let res1 = pontuacao(tempoFarmTotal)
+    let res2 = pontuacao(xp_por_minuto)
+    let res3 = pontuacao(xp_por_hora)
+    let res4 = pontuacao(horas_totais_up)
 
 
     resultado2.innerHTML = `
