@@ -41,14 +41,14 @@ function aco_negro() {
 
 // ENERGIA
 
-function negativo() {
-    // Remove numeros negativos do calculo
-    [restante, minuto, hora, dozehoras, umdia].forEach((res, index) => {
-        if (res < 0) {
-            res[index] *= -1;
-        }
-    });
-}
+// function negativo() {
+//     // Remove numeros negativos do calculo
+//     [restante, minuto, hora, dozehoras, umdia].forEach((res, index) => {
+//         if (res < 0) {
+//             res[index] *= -1;
+//         }
+//     });
+// }
 
 function essencia() {
 
