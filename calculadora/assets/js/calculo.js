@@ -22,13 +22,6 @@ function aco_negro() {
     let dozehoras = meioDia.toLocaleString('pt-br', pontuacao);
     let umdia = dia.toLocaleString('pt-br', pontuacao);
 
-    // Remove numeros negativos do calculo
-    [restante, minuto, hora, dozehoras, umdia].forEach((res, index) => {
-        if (res < 0) {
-            res[index] *= -1;
-        }
-    });
-
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = `
       <br>Seu Farm Restante - ${restante} Dark Steel<br><br>
@@ -40,15 +33,6 @@ function aco_negro() {
 }
 
 // ENERGIA
-
-// function negativo() {
-//     // Remove numeros negativos do calculo
-//     [restante, minuto, hora, dozehoras, umdia].forEach((res, index) => {
-//         if (res < 0) {
-//             res[index] *= -1;
-//         }
-//     });
-// }
 
 function essencia() {
 
