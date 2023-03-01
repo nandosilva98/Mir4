@@ -5,6 +5,9 @@ function aco_negro() {
     const miner = document.querySelector("#cadaminerada");
     const dsporvez = document.querySelector("#dsvez");
     const tempor = document.querySelector("#tempores");
+	
+    const minerada = Number(miner.value);
+    const dsporMinerada = Number(dsporvez.value);
     
     const tempoMinerada = 60 / minerada;
     const calculo = tempoMinerada * dsporMinerada;
@@ -12,8 +15,6 @@ function aco_negro() {
     const meioDia = tempo * 12;
     const dia = tempo * 24;
     
-    const minerada = Number(miner.value);
-    const dsporMinerada = Number(dsporvez.value);
     const tempoRestante = Number(calculo * tempor.value);
 
     // Pontuação
