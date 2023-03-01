@@ -39,7 +39,6 @@ function aco_negro() {
 
 function essencia() {
 
-    const resultado = document.querySelector("#resultado");
     const recolha = document.querySelector("#cadarecolha");
     const energiaporvez = document.querySelector("#revez");
   
@@ -54,6 +53,8 @@ function essencia() {
   
     const tempor = document.querySelector("#tempores");
     const tempoRestante = Number(calculo * tempor.value);
+
+    const resultado = document.querySelector("#resultado");
 
     let restante = pontuacao(tempoRestante)
     let minuto = pontuacao(calculo)
@@ -118,7 +119,6 @@ function exp2() {
     let res2 = pontuacao(xp_por_minuto)
     let res3 = pontuacao(xp_por_hora)
     let res4 = pontuacao(horas_totais_up)
-
 
     resultado2.innerHTML = `
     <br>Nessa Tempo Você Vai Receber <strong>${res1}</strong> de Experiência<br>
