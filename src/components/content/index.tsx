@@ -2,7 +2,7 @@
 function Content() {
     return (
         <div className="flex-1 overflow-hidden">
-        <img src="https://mir4-nandonweb.vercel.app/images/inicio/bg.jpg" className="object-cover w-full h-full" alt="" />
+        <img src="https://raw.githubusercontent.com/nandonweb/Mir4/main/images/inicio/bg.jpg" className="object-cover w-full h-full" alt="" />
         </div>
     )
 }
