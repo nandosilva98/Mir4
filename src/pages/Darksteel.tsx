@@ -4,13 +4,12 @@ import Form from "./../components/form/index";
 
 function Darksteel() {
   return (
-    <div className="h-screen bg-blue-900">
+    <div>
+     <div className='h-screen bg-[url("https://raw.githubusercontent.com/nandonweb/Mir4/main/images/calculadora/fundo_ds2.png")] bg-no-repeat bg-cover '>
       <Header></Header>
-      <div>
-      <p className="text-center">Aço Negro</p>
-      </div>
       <Form></Form>
       <Footer></Footer>
+     </div>
     </div>
   );
 }
