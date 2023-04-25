@@ -127,5 +127,3 @@ function exp2() {
     Nessa Taxa de XP Você Upa em <strong>${res4}</strong> Horas<br>
     `;
 }
-
-export { aco_negro, essencia, exp, exp2 }
